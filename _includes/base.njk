@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ lang or 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <script>
+    (function () {
+      const stored = localStorage.getItem('theme');
+      const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', stored || system);
+    })();
+  </script>
+  <link rel="preload" href="/assets/fonts/TildaSans-VF.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Tinos-Regular-Full.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Tinos-Italic-Full.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Tinos-Bold-Full.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Tinos-BoldItalic-Full.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header class="site-header no-print">
+    <a href="/" class="site-logo">zolotyh.com</a>
+    <nav class="site-nav">
+      <a href="/resume/">{% if lang == 'ru' %}Резюме{% else %}Resume{% endif %}</a>
+      {% if '/resume/' in page.url %}
+        {% if lang == 'ru' %}
+          <a href="/resume/en/" lang="en">EN</a>
+          <button id="resume-pdf" type="button" class="no-print">Сохранить PDF</button>
+        {% else %}
+          <a href="/resume/" lang="ru">RU</a>
+          <button id="resume-pdf" type="button" class="no-print">Save PDF</button>
+        {% endif %}
+      {% endif %}
+      <button id="theme-toggle" type="button" class="no-print">{% if lang == 'ru' %}Тема{% else %}Theme{% endif %}</button>
+    </nav>
+  </header>
+  <main>
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+  </main>
+  <script>
+    (function () {
+      const toggle = document.getElementById('theme-toggle');
+
+      function updateLabel() {
+        const current = document.documentElement.getAttribute('data-theme');
+        if (document.documentElement.lang === 'ru') {
+          toggle.textContent = current === 'dark' ? 'Светлая' : 'Тёмная';
+        } else {
+          toggle.textContent = current === 'dark' ? 'Light' : 'Dark';
+        }
+      }
+
+      toggle.addEventListener('click', function () {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateLabel();
+      });
+
+      updateLabel();
+    })();
+  </script>
+  <script>
+    (function () {
+      const pdfButton = document.getElementById('resume-pdf');
+      if (pdfButton) {
+        pdfButton.addEventListener('click', function () {
+          window.print();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

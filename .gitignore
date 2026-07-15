@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build output
+_site/
+
+# OS files
+.DS_Store
+
+# Temporary/intermediate font files
+merged.ttf

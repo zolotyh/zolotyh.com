@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Tilda Sans VF';
+  src: url('/assets/fonts/TildaSans-VF.woff2') format('woff2');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tinos';
+  src: url('/assets/fonts/Tinos-Regular-Full.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tinos';
+  src: url('/assets/fonts/Tinos-Italic-Full.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tinos';
+  src: url('/assets/fonts/Tinos-Bold-Full.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tinos';
+  src: url('/assets/fonts/Tinos-BoldItalic-Full.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

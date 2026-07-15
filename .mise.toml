@@ -1,0 +1,8 @@
+[tools]
+node = "26"
+"npm:pnpm" = "11.13.0"
+
+[tasks]
+install = "pnpm install"
+build = "pnpm exec eleventy"
+serve = "pnpm exec eleventy --serve"

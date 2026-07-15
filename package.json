@@ -1,0 +1,9 @@
+{
+  "name": "zolotyh.com",
+  "version": "1.0.0",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
