@@ -28,22 +28,18 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-  <header class="site-header no-print">
-    <a href="/" class="site-logo">zolotyh.com</a>
-    <nav class="site-nav">
-      <a href="/resume/">{% if lang == 'ru' %}Резюме{% else %}Resume{% endif %}</a>
-      <a href="/talks/">{% if lang == 'ru' %}Доклады{% else %}Talks{% endif %}</a>
-      {% if '/resume/' in page.url %}
-        {% if lang == 'ru' %}
-          <a href="/resume/en/" lang="en">EN</a>
-          <button id="resume-pdf" type="button" class="no-print">Сохранить PDF</button>
-        {% else %}
-          <a href="/resume/" lang="ru">RU</a>
-          <button id="resume-pdf" type="button" class="no-print">Save PDF</button>
-        {% endif %}
-      {% endif %}
-      <button id="theme-toggle" type="button" class="no-print">{% if lang == 'ru' %}Тема{% else %}Theme{% endif %}</button>
-    </nav>
+  <header class="site-header no-print" lang="ru">
+    <a href="/" class="site-logo"><img src="/assets/favicon.svg" alt="zolotyh.com" width="32" height="32"></a>
+    <div class="site-header-right">
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>Главная</a>
+        <a href="/resume/" {% if page.url == '/resume/' or page.url == '/resume/en/' %}aria-current="page"{% endif %}>Резюме</a>
+        <a href="/talks/" {% if page.url == '/talks/' %}aria-current="page"{% endif %}>Доклады</a>
+      </nav>
+      <div class="site-utils">
+        <button id="theme-toggle" type="button" class="no-print">Тема</button>
+      </div>
+    </div>
   </header>
   <main>
     {% block content %}
@@ -56,11 +52,7 @@
 
       function updateLabel() {
         const current = document.documentElement.getAttribute('data-theme');
-        if (document.documentElement.lang === 'ru') {
-          toggle.textContent = current === 'dark' ? 'Светлая' : 'Тёмная';
-        } else {
-          toggle.textContent = current === 'dark' ? 'Light' : 'Dark';
-        }
+        toggle.textContent = current === 'dark' ? 'Светлая' : 'Тёмная';
       }
 
       toggle.addEventListener('click', function () {

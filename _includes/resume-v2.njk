@@ -4,6 +4,16 @@ layout: base.njk
 
 <article class="resume">
   <header class="resume-hero">
+    <div class="resume-actions no-print">
+      {% if lang == 'ru' %}
+        <a href="/resume/en/" lang="en" class="resume-lang">EN</a>
+      {% else %}
+        <a href="/resume/" lang="ru" class="resume-lang">RU</a>
+      {% endif %}
+      <button id="resume-pdf" type="button" class="no-print">
+        {% if lang == 'ru' %}Сохранить PDF{% else %}Save PDF{% endif %}
+      </button>
+    </div>
     <h1 class="resume-name">{{ name }}</h1>
     <p class="resume-role">{{ role }}</p>
     {% if updated %}

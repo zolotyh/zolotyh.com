@@ -259,14 +259,19 @@ code {
   border-radius: 0.25rem;
 }
 
+.site-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
   gap: 1.25rem;
 }
 
-.site-nav a,
-.site-nav button {
+.site-nav a {
   color: var(--sol-heading);
   text-decoration: none;
   background: none;
@@ -284,7 +289,40 @@ code {
 }
 
 .site-nav a:hover,
-.site-nav button:hover {
+.site-nav a[aria-current="page"] {
+  color: var(--sol-accent);
+}
+
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-utils {
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--sol-surface0);
+}
+
+.site-utils button {
+  color: var(--sol-heading);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-family: var(--font-sans);
+  font-size: calc(.75em + .1vw);
+  font-weight: 600;
+  font-variation-settings: 'wght' 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.site-utils button:hover {
   color: var(--sol-accent);
 }
 
@@ -551,10 +589,43 @@ code {
 }
 
 .resume-hero {
+  position: relative;
   text-align: center;
   margin-bottom: 3rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
   border-bottom: 2px solid var(--sol-heading);
+}
+
+.resume-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resume-actions button,
+.resume-actions a {
+  font-family: var(--font-sans);
+  font-size: calc(.75em + .1vw);
+  font-weight: 600;
+  font-variation-settings: 'wght' 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sol-heading);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resume-actions button:hover,
+.resume-actions a:hover {
+  color: var(--sol-accent);
 }
 
 .resume-name {
@@ -752,13 +823,31 @@ code {
     padding: 0.75rem 1rem;
   }
 
+  .site-header-right {
+    gap: 0.75rem;
+  }
+
   .site-nav {
     gap: 0.75rem;
   }
 
   .site-nav a,
-  .site-nav button {
+  .site-utils button {
     font-size: 0.75rem;
+  }
+
+  .site-utils {
+    padding-left: 0.75rem;
+  }
+
+  .resume-hero {
+    padding-top: 0;
+  }
+
+  .resume-actions {
+    position: static;
+    justify-content: center;
+    margin-bottom: 1.5rem;
   }
 
   .hero {
@@ -1094,6 +1183,7 @@ code {
     text-align: left;
     border-bottom-color: #999;
     margin-bottom: 1.5rem;
+    padding-top: 0;
     padding-bottom: 1rem;
   }
 
