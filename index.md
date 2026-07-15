@@ -2,6 +2,7 @@
 title: zolotyh.com
 description: Personal website and resume of Alexey Zolotyh, Head of Engineering and engineering leader with 18+ years in software development.
 layout: base.njk
+templateEngineOverride: njk
 ---
 
 <section class="hero hero--with-image">
@@ -21,17 +22,25 @@ layout: base.njk
 </section>
 
 <section class="speaker">
-  <div class="speaker-overlay"></div>
   <div class="speaker-content">
-    <h2 class="speaker-title">Speaker</h2>
-    <p class="speaker-lead">Regular speaker at major Russian and international conferences.</p>
-    <ul class="speaker-list">
-      <li>Codefest</li>
-      <li>HolyJS</li>
-      <li>FrontendConf</li>
-      <li>Стачки</li>
-      <li>DUMP</li>
-    </ul>
-    <p class="speaker-links"><a href="/talks/" class="button button--light">All talks</a></p>
+    <h2 class="speaker-title">50+ выступлений</h2>
+    <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP и других.</p>
+
+    {% set featuredTalks = talks.all | selectattr('featured') %}
+    <div class="speaker-talks">
+      {% for talk in featuredTalks %}
+        <article class="speaker-talk">
+          <a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer" class="speaker-talk-link">
+            <div class="speaker-talk-thumb">
+              <img src="https://img.youtube.com/vi/{{ talk.videoId }}/mqdefault.jpg" alt="{{ talk.title }}" loading="lazy" width="320" height="180">
+            </div>
+            <h3 class="speaker-talk-title">{{ talk.title }}</h3>
+            <p class="speaker-talk-meta">{{ talk.conference }} · {{ talk.year }}</p>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+
+    <p class="speaker-links"><a href="/talks/" class="button">Все доклады</a></p>
   </div>
 </section>

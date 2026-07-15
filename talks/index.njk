@@ -7,19 +7,82 @@ lang: ru
 
 <section class="talks">
   <h1>Доклады</h1>
-  <p class="talks-lead">Видео выступлений на конференциях, митапах и подкастах.</p>
+  <p class="talks-lead">50+ выступлений на конференциях, митапах и подкастах. Здесь собраны записи докладов, а также слайды к некоторым из них.</p>
 
-  {% for group in talks.byConference %}
-    <section class="talks-group">
-      <h2 class="talks-group-title">{{ group.conference }}</h2>
-      {% for year in group.years %}
-        <h3 class="talks-year-title">{{ year.year }}</h3>
-        <div class="talks-grid">
-          {% for talk in year.talks %}
-            <article class="talks-card">
-              <h4 class="talks-card-title">
+  {% set featuredTalks = talks.all | selectattr('featured') %}
+  <section class="talks-featured" aria-labelledby="talks-featured-title">
+    <h2 id="talks-featured-title" class="talks-section-title">Избранные</h2>
+    <div class="talks-grid talks-grid--featured">
+      {% for talk in featuredTalks %}
+        <article class="talks-card talks-card--featured" data-tags="{{ talk.tags | join(',') }}">
+          <div class="talks-media" data-video-id="{{ talk.videoId }}" data-embed-url="{{ talk.embedUrl }}" data-title="{{ talk.title }}">
+            <img class="talks-thumbnail" src="https://img.youtube.com/vi/{{ talk.videoId }}/maxresdefault.jpg" alt="{{ talk.title }}" loading="lazy" onerror="this.src='https://img.youtube.com/vi/{{ talk.videoId }}/hqdefault.jpg'">
+            <button class="talks-play" type="button" aria-label="Воспроизвести: {{ talk.title }}">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <div class="talks-card-body">
+            <h3 class="talks-card-title">
+              <a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer">{{ talk.title }}</a>
+            </h3>
+            <p class="talks-card-meta">
+              <span class="talks-card-year">{{ talk.year }}</span>
+              <span class="talks-card-conf">{{ talk.conference }}</span>
+            </p>
+            {% if talk.tags %}
+              <p class="talks-tags">
+                {% for tag in talk.tags %}
+                  <span class="talks-tag">{{ tag }}</span>
+                {% endfor %}
+              </p>
+            {% endif %}
+            {% if talk.slidesUrl %}
+              <p class="talks-slides">
+                <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">Слайды</a>
+              </p>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% set allTags = [] %}
+  {% for talk in talks.all %}
+    {% for tag in talk.tags %}
+      {% if tag not in allTags %}
+        {% set _ = allTags.push(tag) %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  <div class="talks-filters" role="group" aria-label="Фильтры по темам">
+    <button class="talks-filter talks-filter--active" type="button" data-filter="all">Все</button>
+    {% for tag in allTags | sort %}
+      <button class="talks-filter" type="button" data-filter="{{ tag }}">{{ tag }}</button>
+    {% endfor %}
+  </div>
+
+  {% for year, yearTalks in talks.all | groupbyYearDesc %}
+    <section class="talks-year" data-year="{{ year }}" aria-labelledby="talks-year-{{ year }}">
+      <h2 id="talks-year-{{ year }}" class="talks-year-title">{{ year }}</h2>
+      <div class="talks-grid">
+        {% for talk in yearTalks %}
+          <article class="talks-card" data-tags="{{ talk.tags | join(',') }}">
+            <div class="talks-media" data-video-id="{{ talk.videoId }}" data-embed-url="{{ talk.embedUrl }}" data-title="{{ talk.title }}">
+              <img class="talks-thumbnail" src="https://img.youtube.com/vi/{{ talk.videoId }}/maxresdefault.jpg" alt="{{ talk.title }}" loading="lazy" onerror="this.src='https://img.youtube.com/vi/{{ talk.videoId }}/hqdefault.jpg'">
+              <button class="talks-play" type="button" aria-label="Воспроизвести: {{ talk.title }}">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="talks-card-body">
+              <h3 class="talks-card-title">
                 <a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer">{{ talk.title }}</a>
-              </h4>
+              </h3>
+              <p class="talks-card-meta">
+                <span class="talks-card-year">{{ talk.year }}</span>
+                <span class="talks-card-conf">{{ talk.conference }}</span>
+              </p>
               {% if talk.tags %}
                 <p class="talks-tags">
                   {% for tag in talk.tags %}
@@ -27,13 +90,72 @@ lang: ru
                   {% endfor %}
                 </p>
               {% endif %}
-              <div class="talks-video">
-                <iframe src="{{ talk.embedUrl }}" title="{{ talk.title }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </article>
-          {% endfor %}
-        </div>
-      {% endfor %}
+              {% if talk.slidesUrl %}
+                <p class="talks-slides">
+                  <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">Слайды</a>
+                </p>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
     </section>
   {% endfor %}
 </section>
+
+<script>
+(function () {
+  const talks = document.querySelector('.talks');
+  if (!talks) return;
+
+  talks.addEventListener('click', function (event) {
+    const playButton = event.target.closest('.talks-play');
+    if (!playButton) return;
+
+    const media = playButton.closest('.talks-media');
+    const embedUrl = media.getAttribute('data-embed-url');
+    const title = media.getAttribute('data-title');
+    if (!embedUrl) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('src', embedUrl + '?autoplay=1');
+    iframe.setAttribute('title', title);
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.style.position = 'absolute';
+    iframe.style.inset = '0';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.border = '0';
+
+    media.innerHTML = '';
+    media.appendChild(iframe);
+  });
+
+  const filterButtons = talks.querySelectorAll('.talks-filter');
+  const cards = talks.querySelectorAll('.talks-card');
+  const yearSections = talks.querySelectorAll('.talks-year');
+
+  filterButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      const filter = button.getAttribute('data-filter');
+
+      filterButtons.forEach(function (btn) {
+        btn.classList.toggle('talks-filter--active', btn === button);
+      });
+
+      cards.forEach(function (card) {
+        const tags = card.getAttribute('data-tags') || '';
+        const shouldShow = filter === 'all' || tags.split(',').includes(filter);
+        card.hidden = !shouldShow;
+      });
+
+      yearSections.forEach(function (section) {
+        const visibleCards = section.querySelectorAll('.talks-card:not([hidden])');
+        section.hidden = visibleCards.length === 0;
+      });
+    });
+  });
+})();
+</script>

@@ -1,71 +1,7 @@
 {
   "all": [
     {
-      "title": "Алексей Золотых — Лайфхаки во фронтенд-разработке",
-      "conference": "404fest",
-      "year": 2019,
-      "lang": "ru",
-      "video": "https://youtu.be/-7Ez9Jcap3k",
-      "tags": [
-        "frontend",
-        "lifehacks"
-      ],
-      "videoId": "-7Ez9Jcap3k",
-      "embedUrl": "https://www.youtube.com/embed/-7Ez9Jcap3k"
-    },
-    {
-      "title": "Лайфхаки для фронтенд-разработчиков / Алексей Золотых (Wrike)",
-      "conference": "FrontendConf",
-      "year": 2019,
-      "lang": "ru",
-      "video": "https://youtu.be/IHPjaECmtCo",
-      "tags": [
-        "frontend",
-        "lifehacks"
-      ],
-      "videoId": "IHPjaECmtCo",
-      "embedUrl": "https://www.youtube.com/embed/IHPjaECmtCo"
-    },
-    {
-      "title": "Алексей Золотых — Гиперавтоматизированный пайплайн, или Почему матрица должна победить",
-      "conference": "HolyJS",
-      "year": 2021,
-      "lang": "ru",
-      "video": "https://youtu.be/P5TVBhMOVJY",
-      "tags": [
-        "automation",
-        "ci-cd",
-        "frontend"
-      ],
-      "videoId": "P5TVBhMOVJY",
-      "embedUrl": "https://www.youtube.com/embed/P5TVBhMOVJY"
-    },
-    {
-      "title": "Алексей Золотых — Решения, которые мы принимаем. Личный взгляд на архитектуру",
-      "conference": "HolyJS",
-      "year": 2020,
-      "lang": "ru",
-      "video": "https://youtu.be/xXrXlAvwB8E",
-      "tags": [
-        "architecture"
-      ],
-      "videoId": "xXrXlAvwB8E",
-      "embedUrl": "https://www.youtube.com/embed/xXrXlAvwB8E"
-    },
-    {
-      "title": "Алексей Золотых — Борьба с ветряными мельницами, или Как жить с техническим долгом",
-      "conference": "HolyJS",
-      "year": 2023,
-      "lang": "ru",
-      "video": "https://youtu.be/O0IrtmRj0PY",
-      "tags": [
-        "technical-debt"
-      ],
-      "videoId": "O0IrtmRj0PY",
-      "embedUrl": "https://www.youtube.com/embed/O0IrtmRj0PY"
-    },
-    {
-      "title": "Алексей Золотых — OpenTelemetry в мире JavaScript: как приручить observability в веб-приложениях",
+      "title": "OpenTelemetry в мире JavaScript: как приручить observability в веб-приложениях",
       "conference": "HolyJS",
       "year": 2025,
       "lang": "ru",
@@ -76,10 +12,12 @@
         "javascript"
       ],
       "videoId": "r3WENgDyDX0",
-      "embedUrl": "https://www.youtube.com/embed/r3WENgDyDX0"
+      "embedUrl": "https://www.youtube.com/embed/r3WENgDyDX0",
+      "slidesUrl": "https://zolotyh.github.io/holyjs2025/",
+      "featured": true
     },
     {
-      "title": "Алексей Золотых — Дата-ориентированное программирование",
+      "title": "Дата-ориентированное программирование",
       "conference": "HolyJS",
       "year": 2025,
       "lang": "ru",
@@ -92,188 +30,7 @@
       "embedUrl": "https://www.youtube.com/embed/oukpjkET6j4"
     },
     {
-      "title": "Дебаты.JS",
-      "conference": "HolyJS",
-      "year": 2023,
-      "lang": "ru",
-      "video": "https://youtu.be/FhZOeqUXHck",
-      "tags": [
-        "debates",
-        "frontend"
-      ],
-      "videoId": "FhZOeqUXHck",
-      "embedUrl": "https://www.youtube.com/embed/FhZOeqUXHck"
-    },
-    {
-      "title": "HTMX на практике. Алексей Золотых, МойОфис",
-      "conference": "UWDC",
-      "year": 2024,
-      "lang": "ru",
-      "video": "https://youtu.be/CIWDO_b6dIg",
-      "tags": [
-        "htmx",
-        "frontend"
-      ],
-      "videoId": "CIWDO_b6dIg",
-      "embedUrl": "https://www.youtube.com/embed/CIWDO_b6dIg"
-    },
-    {
-      "title": "Dart treeshaking для других платформ - Алексей Золотых | DevFest Siberia 2017",
-      "conference": "DevFest Siberia",
-      "year": 2017,
-      "lang": "ru",
-      "video": "https://youtu.be/xnZW02hmzbM",
-      "tags": [
-        "dart",
-        "treeshaking"
-      ],
-      "videoId": "xnZW02hmzbM",
-      "embedUrl": "https://www.youtube.com/embed/xnZW02hmzbM"
-    },
-    {
-      "title": "Чему можно научиться у Dart | Алексей Золотых (Wrike)",
-      "conference": "AvitoTech",
-      "year": 2016,
-      "lang": "ru",
-      "video": "https://youtu.be/_hVeT_zFXXU",
-      "tags": [
-        "dart"
-      ],
-      "videoId": "_hVeT_zFXXU",
-      "embedUrl": "https://www.youtube.com/embed/_hVeT_zFXXU"
-    },
-    {
-      "title": "MoscowJS 50 — Тестируем подходы к тестированию — Алексей Золотых",
-      "conference": "MoscowJS",
-      "year": 2021,
-      "lang": "ru",
-      "video": "https://youtu.be/OBie_2cMHB8",
-      "tags": [
-        "testing"
-      ],
-      "videoId": "OBie_2cMHB8",
-      "embedUrl": "https://www.youtube.com/embed/OBie_2cMHB8"
-    },
-    {
-      "title": "Алексей Золотых – Как не нужно делать. Несколько неприятных историй из жизни разработчика",
-      "conference": "React Russia",
-      "year": 2019,
-      "lang": "ru",
-      "video": "https://youtu.be/Y-C2AtDS7Os",
-      "tags": [
-        "anti-patterns",
-        "stories"
-      ],
-      "videoId": "Y-C2AtDS7Os",
-      "embedUrl": "https://www.youtube.com/embed/Y-C2AtDS7Os"
-    },
-    {
-      "title": "Алексей Золотых - Автоматизируй это. Гиперавтоматизированный пайплайн",
-      "conference": "PiterJS",
-      "year": 2019,
-      "lang": "ru",
-      "video": "https://youtu.be/F7JZlLIq4ZY",
-      "tags": [
-        "automation",
-        "ci-cd"
-      ],
-      "videoId": "F7JZlLIq4ZY",
-      "embedUrl": "https://www.youtube.com/embed/F7JZlLIq4ZY"
-    },
-    {
-      "title": "Золотых Алексей, Epam - Вся власть бэкендам! Как вернуть власть на сервер или путь туда и обратно",
-      "conference": "SECON",
-      "year": 2021,
-      "lang": "ru",
-      "video": "https://youtu.be/yVkUp0-QrjI",
-      "tags": [
-        "backend",
-        "frontend"
-      ],
-      "videoId": "yVkUp0-QrjI",
-      "embedUrl": "https://www.youtube.com/embed/yVkUp0-QrjI"
-    },
-    {
-      "title": "Золотых Алексей, infobip, Санкт-Петербург - GRAPHQL — НОВЫЙ REDUX",
-      "conference": "SECON",
-      "year": 2019,
-      "lang": "ru",
-      "video": "https://youtu.be/zJdNgCk4K9M",
-      "tags": [
-        "graphql",
-        "state-management"
-      ],
-      "videoId": "zJdNgCk4K9M",
-      "embedUrl": "https://www.youtube.com/embed/zJdNgCk4K9M"
-    },
-    {
-      "title": "Золотых Алексей, Wrike, СПб - ЧТО ПОСЕЕШЬ, ТО И ПОЖМЕШЬ. ПОУЧИТЕЛЬНЫЕ ИСТОРИИ ПРО СЖАТИЕ JAVASCRIPT",
-      "conference": "SECON",
-      "year": 2018,
-      "lang": "ru",
-      "video": "https://youtu.be/kxY7n_g8z6M",
-      "tags": [
-        "performance",
-        "compression",
-        "javascript"
-      ],
-      "videoId": "kxY7n_g8z6M",
-      "embedUrl": "https://www.youtube.com/embed/kxY7n_g8z6M"
-    },
-    {
-      "title": "Никита Сидоров. Алексей Золотых. Семен Левенсон. Как отдать технический долг",
-      "conference": "CodeFest",
-      "year": 2023,
-      "lang": "ru",
-      "video": "https://youtu.be/O6ohmGViEwg",
-      "tags": [
-        "technical-debt",
-        "panel"
-      ],
-      "videoId": "O6ohmGViEwg",
-      "embedUrl": "https://www.youtube.com/embed/O6ohmGViEwg"
-    },
-    {
-      "title": "Китайские стратагемы Сунь-цзы и как они помогают мне в работе / Алексей Золотых (Infobip)",
-      "conference": "TeamleadConf",
-      "year": 2020,
-      "lang": "ru",
-      "video": "https://youtu.be/VIhiFKMfYXA",
-      "tags": [
-        "management",
-        "strategy"
-      ],
-      "videoId": "VIhiFKMfYXA",
-      "embedUrl": "https://www.youtube.com/embed/VIhiFKMfYXA"
-    },
-    {
-      "title": "#Frontend, Алексей Золотых, Сжимаем Javascript по-взрослому",
-      "conference": "CodeFest",
-      "year": 2019,
-      "lang": "ru",
-      "video": "https://youtu.be/feptFoey_bU",
-      "tags": [
-        "performance",
-        "compression",
-        "javascript"
-      ],
-      "videoId": "feptFoey_bU",
-      "embedUrl": "https://www.youtube.com/embed/feptFoey_bU"
-    },
-    {
-      "title": "Технический долг. Разбираемся, кто, что и кому должен, Алексей Золотых, Мой Офис",
-      "conference": "Burning Lead",
-      "year": 2023,
-      "lang": "ru",
-      "video": "https://youtu.be/ZALrr2lU1Ls",
-      "tags": [
-        "technical-debt"
-      ],
-      "videoId": "ZALrr2lU1Ls",
-      "embedUrl": "https://www.youtube.com/embed/ZALrr2lU1Ls"
-    },
-    {
-      "title": "От мечты к провалу: как загубить фронтенд-проект / Алексей Золотых",
+      "title": "От мечты к провалу: как загубить фронтенд-проект",
       "conference": "FrontendConf",
       "year": 2025,
       "lang": "ru",
@@ -284,6 +41,21 @@
       ],
       "videoId": "g0xZ2gxhkjM",
       "embedUrl": "https://www.youtube.com/embed/g0xZ2gxhkjM"
+    },
+    {
+      "title": "HTMX на практике",
+      "conference": "UWDC",
+      "year": 2024,
+      "lang": "ru",
+      "video": "https://youtu.be/CIWDO_b6dIg",
+      "tags": [
+        "htmx",
+        "frontend"
+      ],
+      "videoId": "CIWDO_b6dIg",
+      "embedUrl": "https://www.youtube.com/embed/CIWDO_b6dIg",
+      "slidesUrl": "https://zolotyh.github.io/uwdc2024/",
+      "featured": true
     },
     {
       "title": "Дебаты «Большой рефакторинг vs Постепенные оптимизации»",
@@ -300,7 +72,208 @@
       "embedUrl": "https://www.youtube.com/embed/GDB840NZlHU"
     },
     {
-      "title": "About zones in Dart — Алексей Золотых",
+      "title": "Борьба с ветряными мельницами, или Как жить с техническим долгом",
+      "conference": "HolyJS",
+      "year": 2023,
+      "lang": "ru",
+      "video": "https://youtu.be/O0IrtmRj0PY",
+      "tags": [
+        "technical-debt"
+      ],
+      "videoId": "O0IrtmRj0PY",
+      "embedUrl": "https://www.youtube.com/embed/O0IrtmRj0PY",
+      "slidesUrl": "https://zolotyh.github.io/holyjs2023/",
+      "featured": true
+    },
+    {
+      "title": "Дебаты.JS",
+      "conference": "HolyJS",
+      "year": 2023,
+      "lang": "ru",
+      "video": "https://youtu.be/FhZOeqUXHck",
+      "tags": [
+        "debates",
+        "frontend"
+      ],
+      "videoId": "FhZOeqUXHck",
+      "embedUrl": "https://www.youtube.com/embed/FhZOeqUXHck"
+    },
+    {
+      "title": "Никита Сидоров. Алексей Золотых. Семен Левенсон. Как отдать технический долг",
+      "conference": "CodeFest",
+      "year": 2023,
+      "lang": "ru",
+      "video": "https://youtu.be/O6ohmGViEwg",
+      "tags": [
+        "technical-debt",
+        "panel"
+      ],
+      "videoId": "O6ohmGViEwg",
+      "embedUrl": "https://www.youtube.com/embed/O6ohmGViEwg"
+    },
+    {
+      "title": "Технический долг. Разбираемся, кто, что и кому должен",
+      "conference": "Burning Lead",
+      "year": 2023,
+      "lang": "ru",
+      "video": "https://youtu.be/ZALrr2lU1Ls",
+      "tags": [
+        "technical-debt"
+      ],
+      "videoId": "ZALrr2lU1Ls",
+      "embedUrl": "https://www.youtube.com/embed/ZALrr2lU1Ls"
+    },
+    {
+      "title": "Гиперавтоматизированный пайплайн, или Почему матрица должна победить",
+      "conference": "HolyJS",
+      "year": 2021,
+      "lang": "ru",
+      "video": "https://youtu.be/P5TVBhMOVJY",
+      "tags": [
+        "automation",
+        "ci-cd",
+        "frontend"
+      ],
+      "videoId": "P5TVBhMOVJY",
+      "embedUrl": "https://www.youtube.com/embed/P5TVBhMOVJY"
+    },
+    {
+      "title": "Тестируем подходы к тестированию",
+      "conference": "MoscowJS",
+      "year": 2021,
+      "lang": "ru",
+      "video": "https://youtu.be/OBie_2cMHB8",
+      "tags": [
+        "testing"
+      ],
+      "videoId": "OBie_2cMHB8",
+      "embedUrl": "https://www.youtube.com/embed/OBie_2cMHB8",
+      "slidesUrl": "https://zolotyh.github.io/moscowjs/",
+      "featured": true
+    },
+    {
+      "title": "Вся власть бэкендам! Как вернуть власть на сервер или путь туда и обратно",
+      "conference": "SECON",
+      "year": 2021,
+      "lang": "ru",
+      "video": "https://youtu.be/yVkUp0-QrjI",
+      "tags": [
+        "backend",
+        "frontend"
+      ],
+      "videoId": "yVkUp0-QrjI",
+      "embedUrl": "https://www.youtube.com/embed/yVkUp0-QrjI"
+    },
+    {
+      "title": "Решения, которые мы принимаем. Личный взгляд на архитектуру",
+      "conference": "HolyJS",
+      "year": 2020,
+      "lang": "ru",
+      "video": "https://youtu.be/xXrXlAvwB8E",
+      "tags": [
+        "architecture"
+      ],
+      "videoId": "xXrXlAvwB8E",
+      "embedUrl": "https://www.youtube.com/embed/xXrXlAvwB8E",
+      "slidesUrl": "https://zolotyh.github.io/holyjs-2020/",
+      "featured": true
+    },
+    {
+      "title": "Китайские стратагемы Сунь-цзы и как они помогают мне в работе",
+      "conference": "TeamleadConf",
+      "year": 2020,
+      "lang": "ru",
+      "video": "https://youtu.be/VIhiFKMfYXA",
+      "tags": [
+        "management",
+        "strategy"
+      ],
+      "videoId": "VIhiFKMfYXA",
+      "embedUrl": "https://www.youtube.com/embed/VIhiFKMfYXA",
+      "slidesUrl": "https://zolotyh.github.io/syn-dzy/#/24",
+      "featured": true
+    },
+    {
+      "title": "Лайфхаки во фронтенд-разработке",
+      "conference": "404fest",
+      "year": 2019,
+      "lang": "ru",
+      "video": "https://youtu.be/-7Ez9Jcap3k",
+      "tags": [
+        "frontend",
+        "lifehacks"
+      ],
+      "videoId": "-7Ez9Jcap3k",
+      "embedUrl": "https://www.youtube.com/embed/-7Ez9Jcap3k"
+    },
+    {
+      "title": "Лайфхаки для фронтенд-разработчиков",
+      "conference": "FrontendConf",
+      "year": 2019,
+      "lang": "ru",
+      "video": "https://youtu.be/IHPjaECmtCo",
+      "tags": [
+        "frontend",
+        "lifehacks"
+      ],
+      "videoId": "IHPjaECmtCo",
+      "embedUrl": "https://www.youtube.com/embed/IHPjaECmtCo"
+    },
+    {
+      "title": "Как не нужно делать. Несколько неприятных историй из жизни разработчика",
+      "conference": "React Russia",
+      "year": 2019,
+      "lang": "ru",
+      "video": "https://youtu.be/Y-C2AtDS7Os",
+      "tags": [
+        "anti-patterns",
+        "stories"
+      ],
+      "videoId": "Y-C2AtDS7Os",
+      "embedUrl": "https://www.youtube.com/embed/Y-C2AtDS7Os"
+    },
+    {
+      "title": "Автоматизируй это. Гиперавтоматизированный пайплайн",
+      "conference": "PiterJS",
+      "year": 2019,
+      "lang": "ru",
+      "video": "https://youtu.be/F7JZlLIq4ZY",
+      "tags": [
+        "automation",
+        "ci-cd"
+      ],
+      "videoId": "F7JZlLIq4ZY",
+      "embedUrl": "https://www.youtube.com/embed/F7JZlLIq4ZY"
+    },
+    {
+      "title": "GraphQL — новый Redux",
+      "conference": "SECON",
+      "year": 2019,
+      "lang": "ru",
+      "video": "https://youtu.be/zJdNgCk4K9M",
+      "tags": [
+        "graphql",
+        "state-management"
+      ],
+      "videoId": "zJdNgCk4K9M",
+      "embedUrl": "https://www.youtube.com/embed/zJdNgCk4K9M"
+    },
+    {
+      "title": "Сжимаем Javascript по-взрослому",
+      "conference": "CodeFest",
+      "year": 2019,
+      "lang": "ru",
+      "video": "https://youtu.be/feptFoey_bU",
+      "tags": [
+        "performance",
+        "compression",
+        "javascript"
+      ],
+      "videoId": "feptFoey_bU",
+      "embedUrl": "https://www.youtube.com/embed/feptFoey_bU"
+    },
+    {
+      "title": "About zones in Dart",
       "conference": "Wrike Community",
       "year": 2019,
       "lang": "ru",
@@ -313,34 +286,34 @@
       "embedUrl": "https://www.youtube.com/embed/QIEhkvYRVNg"
     },
     {
-      "title": "Как привести в порядок миллион строк клиентского кода за неделю — Алексей Золотых, Wrike",
+      "title": "GraphQL — новый Redux",
       "conference": "Wrike Community",
-      "year": 2017,
+      "year": 2019,
       "lang": "ru",
-      "video": "https://youtu.be/NF4JW86YM4s",
+      "video": "https://youtu.be/gPb0y4ZND9c",
       "tags": [
-        "refactoring",
-        "javascript",
-        "scale"
+        "graphql",
+        "state-management"
       ],
-      "videoId": "NF4JW86YM4s",
-      "embedUrl": "https://www.youtube.com/embed/NF4JW86YM4s"
+      "videoId": "gPb0y4ZND9c",
+      "embedUrl": "https://www.youtube.com/embed/gPb0y4ZND9c"
     },
     {
-      "title": "История самурая. Путь, который проходит Dart-код от IDE до браузера — Алексей Золотых, Wrike",
-      "conference": "Wrike Community",
-      "year": 2017,
+      "title": "Что посеешь, то и пожмёшь. Поучительные истории про сжатие JavaScript",
+      "conference": "SECON",
+      "year": 2018,
       "lang": "ru",
-      "video": "https://youtu.be/G6a5YcqNx7g",
+      "video": "https://youtu.be/kxY7n_g8z6M",
       "tags": [
-        "dart",
-        "compilation"
+        "performance",
+        "compression",
+        "javascript"
       ],
-      "videoId": "G6a5YcqNx7g",
-      "embedUrl": "https://www.youtube.com/embed/G6a5YcqNx7g"
+      "videoId": "kxY7n_g8z6M",
+      "embedUrl": "https://www.youtube.com/embed/kxY7n_g8z6M"
     },
     {
-      "title": "Рефакторинг — Алексей Золотых, Wrike",
+      "title": "Рефакторинг",
       "conference": "Wrike Community",
       "year": 2018,
       "lang": "ru",
@@ -352,7 +325,7 @@
       "embedUrl": "https://www.youtube.com/embed/1GslR1HJnwI"
     },
     {
-      "title": "Что посеешь, то и пожмешь. Поучительные истории про сжатие JavaScript — Алексей Золотых, Wrike",
+      "title": "Что посеешь, то и пожмешь. Поучительные истории про сжатие JavaScript",
       "conference": "Wrike Community",
       "year": 2018,
       "lang": "ru",
@@ -366,7 +339,7 @@
       "embedUrl": "https://www.youtube.com/embed/W6qx7SwgZsg"
     },
     {
-      "title": "Dart. Один язык — все платформы — Алексей Золотых, Wrike",
+      "title": "Dart. Один язык — все платформы",
       "conference": "Wrike Community",
       "year": 2018,
       "lang": "ru",
@@ -378,7 +351,7 @@
       "embedUrl": "https://www.youtube.com/embed/bYjsdmrrFTI"
     },
     {
-      "title": "Алиса в стране JS. Как Dart живёт в браузере — Алексей Золотых, Wrike",
+      "title": "Алиса в стране JS. Как Dart живёт в браузере",
       "conference": "Wrike Community",
       "year": 2018,
       "lang": "ru",
@@ -391,20 +364,47 @@
       "embedUrl": "https://www.youtube.com/embed/Bk-uJgo5GO4"
     },
     {
-      "title": "GraphQL — новый Redux — Алексей Золотых, Wrike",
-      "conference": "Wrike Community",
-      "year": 2019,
+      "title": "Dart treeshaking для других платформ",
+      "conference": "DevFest Siberia",
+      "year": 2017,
       "lang": "ru",
-      "video": "https://youtu.be/gPb0y4ZND9c",
+      "video": "https://youtu.be/xnZW02hmzbM",
       "tags": [
-        "graphql",
-        "state-management"
+        "dart",
+        "treeshaking"
       ],
-      "videoId": "gPb0y4ZND9c",
-      "embedUrl": "https://www.youtube.com/embed/gPb0y4ZND9c"
+      "videoId": "xnZW02hmzbM",
+      "embedUrl": "https://www.youtube.com/embed/xnZW02hmzbM"
     },
     {
-      "title": "Alexey Zolotykh \"Life Hacks for frontend developer\"",
+      "title": "Как привести в порядок миллион строк клиентского кода за неделю",
+      "conference": "Wrike Community",
+      "year": 2017,
+      "lang": "ru",
+      "video": "https://youtu.be/NF4JW86YM4s",
+      "tags": [
+        "refactoring",
+        "javascript",
+        "scale"
+      ],
+      "videoId": "NF4JW86YM4s",
+      "embedUrl": "https://www.youtube.com/embed/NF4JW86YM4s"
+    },
+    {
+      "title": "История самурая. Путь, который проходит Dart-код от IDE до браузера",
+      "conference": "Wrike Community",
+      "year": 2017,
+      "lang": "ru",
+      "video": "https://youtu.be/G6a5YcqNx7g",
+      "tags": [
+        "dart",
+        "compilation"
+      ],
+      "videoId": "G6a5YcqNx7g",
+      "embedUrl": "https://www.youtube.com/embed/G6a5YcqNx7g"
+    },
+    {
+      "title": "Life Hacks for frontend developer\"",
       "conference": "OdesaJS",
       "year": 2017,
       "lang": "en",
@@ -415,1212 +415,18 @@
       ],
       "videoId": "i3KueEClK8A",
       "embedUrl": "https://www.youtube.com/embed/i3KueEClK8A"
-    }
-  ],
-  "byYear": [
-    {
-      "year": 2025,
-      "conferences": [
-        {
-          "conference": "FrontendConf",
-          "talks": [
-            {
-              "title": "От мечты к провалу: как загубить фронтенд-проект / Алексей Золотых",
-              "conference": "FrontendConf",
-              "year": 2025,
-              "lang": "ru",
-              "video": "https://youtu.be/g0xZ2gxhkjM",
-              "tags": [
-                "frontend",
-                "project-failure"
-              ],
-              "videoId": "g0xZ2gxhkjM",
-              "embedUrl": "https://www.youtube.com/embed/g0xZ2gxhkjM"
-            }
-          ]
-        },
-        {
-          "conference": "HolyJS",
-          "talks": [
-            {
-              "title": "Алексей Золотых — Дата-ориентированное программирование",
-              "conference": "HolyJS",
-              "year": 2025,
-              "lang": "ru",
-              "video": "https://youtu.be/oukpjkET6j4",
-              "tags": [
-                "data-oriented",
-                "javascript"
-              ],
-              "videoId": "oukpjkET6j4",
-              "embedUrl": "https://www.youtube.com/embed/oukpjkET6j4"
-            },
-            {
-              "title": "Алексей Золотых — OpenTelemetry в мире JavaScript: как приручить observability в веб-приложениях",
-              "conference": "HolyJS",
-              "year": 2025,
-              "lang": "ru",
-              "video": "https://youtu.be/r3WENgDyDX0",
-              "tags": [
-                "observability",
-                "opentelemetry",
-                "javascript"
-              ],
-              "videoId": "r3WENgDyDX0",
-              "embedUrl": "https://www.youtube.com/embed/r3WENgDyDX0"
-            }
-          ]
-        }
-      ]
     },
     {
-      "year": 2024,
-      "conferences": [
-        {
-          "conference": "FrontendConf",
-          "talks": [
-            {
-              "title": "Дебаты «Большой рефакторинг vs Постепенные оптимизации»",
-              "conference": "FrontendConf",
-              "year": 2024,
-              "lang": "ru",
-              "video": "https://youtu.be/GDB840NZlHU",
-              "tags": [
-                "refactoring",
-                "optimization",
-                "debates"
-              ],
-              "videoId": "GDB840NZlHU",
-              "embedUrl": "https://www.youtube.com/embed/GDB840NZlHU"
-            }
-          ]
-        },
-        {
-          "conference": "UWDC",
-          "talks": [
-            {
-              "title": "HTMX на практике. Алексей Золотых, МойОфис",
-              "conference": "UWDC",
-              "year": 2024,
-              "lang": "ru",
-              "video": "https://youtu.be/CIWDO_b6dIg",
-              "tags": [
-                "htmx",
-                "frontend"
-              ],
-              "videoId": "CIWDO_b6dIg",
-              "embedUrl": "https://www.youtube.com/embed/CIWDO_b6dIg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": 2023,
-      "conferences": [
-        {
-          "conference": "Burning Lead",
-          "talks": [
-            {
-              "title": "Технический долг. Разбираемся, кто, что и кому должен, Алексей Золотых, Мой Офис",
-              "conference": "Burning Lead",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/ZALrr2lU1Ls",
-              "tags": [
-                "technical-debt"
-              ],
-              "videoId": "ZALrr2lU1Ls",
-              "embedUrl": "https://www.youtube.com/embed/ZALrr2lU1Ls"
-            }
-          ]
-        },
-        {
-          "conference": "CodeFest",
-          "talks": [
-            {
-              "title": "Никита Сидоров. Алексей Золотых. Семен Левенсон. Как отдать технический долг",
-              "conference": "CodeFest",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/O6ohmGViEwg",
-              "tags": [
-                "technical-debt",
-                "panel"
-              ],
-              "videoId": "O6ohmGViEwg",
-              "embedUrl": "https://www.youtube.com/embed/O6ohmGViEwg"
-            }
-          ]
-        },
-        {
-          "conference": "HolyJS",
-          "talks": [
-            {
-              "title": "Алексей Золотых — Борьба с ветряными мельницами, или Как жить с техническим долгом",
-              "conference": "HolyJS",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/O0IrtmRj0PY",
-              "tags": [
-                "technical-debt"
-              ],
-              "videoId": "O0IrtmRj0PY",
-              "embedUrl": "https://www.youtube.com/embed/O0IrtmRj0PY"
-            },
-            {
-              "title": "Дебаты.JS",
-              "conference": "HolyJS",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/FhZOeqUXHck",
-              "tags": [
-                "debates",
-                "frontend"
-              ],
-              "videoId": "FhZOeqUXHck",
-              "embedUrl": "https://www.youtube.com/embed/FhZOeqUXHck"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": 2021,
-      "conferences": [
-        {
-          "conference": "HolyJS",
-          "talks": [
-            {
-              "title": "Алексей Золотых — Гиперавтоматизированный пайплайн, или Почему матрица должна победить",
-              "conference": "HolyJS",
-              "year": 2021,
-              "lang": "ru",
-              "video": "https://youtu.be/P5TVBhMOVJY",
-              "tags": [
-                "automation",
-                "ci-cd",
-                "frontend"
-              ],
-              "videoId": "P5TVBhMOVJY",
-              "embedUrl": "https://www.youtube.com/embed/P5TVBhMOVJY"
-            }
-          ]
-        },
-        {
-          "conference": "MoscowJS",
-          "talks": [
-            {
-              "title": "MoscowJS 50 — Тестируем подходы к тестированию — Алексей Золотых",
-              "conference": "MoscowJS",
-              "year": 2021,
-              "lang": "ru",
-              "video": "https://youtu.be/OBie_2cMHB8",
-              "tags": [
-                "testing"
-              ],
-              "videoId": "OBie_2cMHB8",
-              "embedUrl": "https://www.youtube.com/embed/OBie_2cMHB8"
-            }
-          ]
-        },
-        {
-          "conference": "SECON",
-          "talks": [
-            {
-              "title": "Золотых Алексей, Epam - Вся власть бэкендам! Как вернуть власть на сервер или путь туда и обратно",
-              "conference": "SECON",
-              "year": 2021,
-              "lang": "ru",
-              "video": "https://youtu.be/yVkUp0-QrjI",
-              "tags": [
-                "backend",
-                "frontend"
-              ],
-              "videoId": "yVkUp0-QrjI",
-              "embedUrl": "https://www.youtube.com/embed/yVkUp0-QrjI"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": 2020,
-      "conferences": [
-        {
-          "conference": "HolyJS",
-          "talks": [
-            {
-              "title": "Алексей Золотых — Решения, которые мы принимаем. Личный взгляд на архитектуру",
-              "conference": "HolyJS",
-              "year": 2020,
-              "lang": "ru",
-              "video": "https://youtu.be/xXrXlAvwB8E",
-              "tags": [
-                "architecture"
-              ],
-              "videoId": "xXrXlAvwB8E",
-              "embedUrl": "https://www.youtube.com/embed/xXrXlAvwB8E"
-            }
-          ]
-        },
-        {
-          "conference": "TeamleadConf",
-          "talks": [
-            {
-              "title": "Китайские стратагемы Сунь-цзы и как они помогают мне в работе / Алексей Золотых (Infobip)",
-              "conference": "TeamleadConf",
-              "year": 2020,
-              "lang": "ru",
-              "video": "https://youtu.be/VIhiFKMfYXA",
-              "tags": [
-                "management",
-                "strategy"
-              ],
-              "videoId": "VIhiFKMfYXA",
-              "embedUrl": "https://www.youtube.com/embed/VIhiFKMfYXA"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": 2019,
-      "conferences": [
-        {
-          "conference": "404fest",
-          "talks": [
-            {
-              "title": "Алексей Золотых — Лайфхаки во фронтенд-разработке",
-              "conference": "404fest",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/-7Ez9Jcap3k",
-              "tags": [
-                "frontend",
-                "lifehacks"
-              ],
-              "videoId": "-7Ez9Jcap3k",
-              "embedUrl": "https://www.youtube.com/embed/-7Ez9Jcap3k"
-            }
-          ]
-        },
-        {
-          "conference": "CodeFest",
-          "talks": [
-            {
-              "title": "#Frontend, Алексей Золотых, Сжимаем Javascript по-взрослому",
-              "conference": "CodeFest",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/feptFoey_bU",
-              "tags": [
-                "performance",
-                "compression",
-                "javascript"
-              ],
-              "videoId": "feptFoey_bU",
-              "embedUrl": "https://www.youtube.com/embed/feptFoey_bU"
-            }
-          ]
-        },
-        {
-          "conference": "FrontendConf",
-          "talks": [
-            {
-              "title": "Лайфхаки для фронтенд-разработчиков / Алексей Золотых (Wrike)",
-              "conference": "FrontendConf",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/IHPjaECmtCo",
-              "tags": [
-                "frontend",
-                "lifehacks"
-              ],
-              "videoId": "IHPjaECmtCo",
-              "embedUrl": "https://www.youtube.com/embed/IHPjaECmtCo"
-            }
-          ]
-        },
-        {
-          "conference": "PiterJS",
-          "talks": [
-            {
-              "title": "Алексей Золотых - Автоматизируй это. Гиперавтоматизированный пайплайн",
-              "conference": "PiterJS",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/F7JZlLIq4ZY",
-              "tags": [
-                "automation",
-                "ci-cd"
-              ],
-              "videoId": "F7JZlLIq4ZY",
-              "embedUrl": "https://www.youtube.com/embed/F7JZlLIq4ZY"
-            }
-          ]
-        },
-        {
-          "conference": "React Russia",
-          "talks": [
-            {
-              "title": "Алексей Золотых – Как не нужно делать. Несколько неприятных историй из жизни разработчика",
-              "conference": "React Russia",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/Y-C2AtDS7Os",
-              "tags": [
-                "anti-patterns",
-                "stories"
-              ],
-              "videoId": "Y-C2AtDS7Os",
-              "embedUrl": "https://www.youtube.com/embed/Y-C2AtDS7Os"
-            }
-          ]
-        },
-        {
-          "conference": "SECON",
-          "talks": [
-            {
-              "title": "Золотых Алексей, infobip, Санкт-Петербург - GRAPHQL — НОВЫЙ REDUX",
-              "conference": "SECON",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/zJdNgCk4K9M",
-              "tags": [
-                "graphql",
-                "state-management"
-              ],
-              "videoId": "zJdNgCk4K9M",
-              "embedUrl": "https://www.youtube.com/embed/zJdNgCk4K9M"
-            }
-          ]
-        },
-        {
-          "conference": "Wrike Community",
-          "talks": [
-            {
-              "title": "About zones in Dart — Алексей Золотых",
-              "conference": "Wrike Community",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/QIEhkvYRVNg",
-              "tags": [
-                "dart",
-                "zones"
-              ],
-              "videoId": "QIEhkvYRVNg",
-              "embedUrl": "https://www.youtube.com/embed/QIEhkvYRVNg"
-            },
-            {
-              "title": "GraphQL — новый Redux — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/gPb0y4ZND9c",
-              "tags": [
-                "graphql",
-                "state-management"
-              ],
-              "videoId": "gPb0y4ZND9c",
-              "embedUrl": "https://www.youtube.com/embed/gPb0y4ZND9c"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": 2018,
-      "conferences": [
-        {
-          "conference": "SECON",
-          "talks": [
-            {
-              "title": "Золотых Алексей, Wrike, СПб - ЧТО ПОСЕЕШЬ, ТО И ПОЖМЕШЬ. ПОУЧИТЕЛЬНЫЕ ИСТОРИИ ПРО СЖАТИЕ JAVASCRIPT",
-              "conference": "SECON",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/kxY7n_g8z6M",
-              "tags": [
-                "performance",
-                "compression",
-                "javascript"
-              ],
-              "videoId": "kxY7n_g8z6M",
-              "embedUrl": "https://www.youtube.com/embed/kxY7n_g8z6M"
-            }
-          ]
-        },
-        {
-          "conference": "Wrike Community",
-          "talks": [
-            {
-              "title": "Алиса в стране JS. Как Dart живёт в браузере — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/Bk-uJgo5GO4",
-              "tags": [
-                "dart",
-                "javascript"
-              ],
-              "videoId": "Bk-uJgo5GO4",
-              "embedUrl": "https://www.youtube.com/embed/Bk-uJgo5GO4"
-            },
-            {
-              "title": "Рефакторинг — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/1GslR1HJnwI",
-              "tags": [
-                "refactoring"
-              ],
-              "videoId": "1GslR1HJnwI",
-              "embedUrl": "https://www.youtube.com/embed/1GslR1HJnwI"
-            },
-            {
-              "title": "Что посеешь, то и пожмешь. Поучительные истории про сжатие JavaScript — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/W6qx7SwgZsg",
-              "tags": [
-                "performance",
-                "compression",
-                "javascript"
-              ],
-              "videoId": "W6qx7SwgZsg",
-              "embedUrl": "https://www.youtube.com/embed/W6qx7SwgZsg"
-            },
-            {
-              "title": "Dart. Один язык — все платформы — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/bYjsdmrrFTI",
-              "tags": [
-                "dart"
-              ],
-              "videoId": "bYjsdmrrFTI",
-              "embedUrl": "https://www.youtube.com/embed/bYjsdmrrFTI"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": 2017,
-      "conferences": [
-        {
-          "conference": "DevFest Siberia",
-          "talks": [
-            {
-              "title": "Dart treeshaking для других платформ - Алексей Золотых | DevFest Siberia 2017",
-              "conference": "DevFest Siberia",
-              "year": 2017,
-              "lang": "ru",
-              "video": "https://youtu.be/xnZW02hmzbM",
-              "tags": [
-                "dart",
-                "treeshaking"
-              ],
-              "videoId": "xnZW02hmzbM",
-              "embedUrl": "https://www.youtube.com/embed/xnZW02hmzbM"
-            }
-          ]
-        },
-        {
-          "conference": "OdesaJS",
-          "talks": [
-            {
-              "title": "Alexey Zolotykh \"Life Hacks for frontend developer\"",
-              "conference": "OdesaJS",
-              "year": 2017,
-              "lang": "en",
-              "video": "https://youtu.be/i3KueEClK8A",
-              "tags": [
-                "frontend",
-                "lifehacks"
-              ],
-              "videoId": "i3KueEClK8A",
-              "embedUrl": "https://www.youtube.com/embed/i3KueEClK8A"
-            }
-          ]
-        },
-        {
-          "conference": "Wrike Community",
-          "talks": [
-            {
-              "title": "История самурая. Путь, который проходит Dart-код от IDE до браузера — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2017,
-              "lang": "ru",
-              "video": "https://youtu.be/G6a5YcqNx7g",
-              "tags": [
-                "dart",
-                "compilation"
-              ],
-              "videoId": "G6a5YcqNx7g",
-              "embedUrl": "https://www.youtube.com/embed/G6a5YcqNx7g"
-            },
-            {
-              "title": "Как привести в порядок миллион строк клиентского кода за неделю — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2017,
-              "lang": "ru",
-              "video": "https://youtu.be/NF4JW86YM4s",
-              "tags": [
-                "refactoring",
-                "javascript",
-                "scale"
-              ],
-              "videoId": "NF4JW86YM4s",
-              "embedUrl": "https://www.youtube.com/embed/NF4JW86YM4s"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": 2016,
-      "conferences": [
-        {
-          "conference": "AvitoTech",
-          "talks": [
-            {
-              "title": "Чему можно научиться у Dart | Алексей Золотых (Wrike)",
-              "conference": "AvitoTech",
-              "year": 2016,
-              "lang": "ru",
-              "video": "https://youtu.be/_hVeT_zFXXU",
-              "tags": [
-                "dart"
-              ],
-              "videoId": "_hVeT_zFXXU",
-              "embedUrl": "https://www.youtube.com/embed/_hVeT_zFXXU"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "byConference": [
-    {
-      "conference": "TeamleadConf",
-      "years": [
-        {
-          "year": 2020,
-          "talks": [
-            {
-              "title": "Китайские стратагемы Сунь-цзы и как они помогают мне в работе / Алексей Золотых (Infobip)",
-              "conference": "TeamleadConf",
-              "year": 2020,
-              "lang": "ru",
-              "video": "https://youtu.be/VIhiFKMfYXA",
-              "tags": [
-                "management",
-                "strategy"
-              ],
-              "videoId": "VIhiFKMfYXA",
-              "embedUrl": "https://www.youtube.com/embed/VIhiFKMfYXA"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "HolyJS",
-      "years": [
-        {
-          "year": 2025,
-          "talks": [
-            {
-              "title": "Алексей Золотых — Дата-ориентированное программирование",
-              "conference": "HolyJS",
-              "year": 2025,
-              "lang": "ru",
-              "video": "https://youtu.be/oukpjkET6j4",
-              "tags": [
-                "data-oriented",
-                "javascript"
-              ],
-              "videoId": "oukpjkET6j4",
-              "embedUrl": "https://www.youtube.com/embed/oukpjkET6j4"
-            },
-            {
-              "title": "Алексей Золотых — OpenTelemetry в мире JavaScript: как приручить observability в веб-приложениях",
-              "conference": "HolyJS",
-              "year": 2025,
-              "lang": "ru",
-              "video": "https://youtu.be/r3WENgDyDX0",
-              "tags": [
-                "observability",
-                "opentelemetry",
-                "javascript"
-              ],
-              "videoId": "r3WENgDyDX0",
-              "embedUrl": "https://www.youtube.com/embed/r3WENgDyDX0"
-            }
-          ]
-        },
-        {
-          "year": 2023,
-          "talks": [
-            {
-              "title": "Алексей Золотых — Борьба с ветряными мельницами, или Как жить с техническим долгом",
-              "conference": "HolyJS",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/O0IrtmRj0PY",
-              "tags": [
-                "technical-debt"
-              ],
-              "videoId": "O0IrtmRj0PY",
-              "embedUrl": "https://www.youtube.com/embed/O0IrtmRj0PY"
-            },
-            {
-              "title": "Дебаты.JS",
-              "conference": "HolyJS",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/FhZOeqUXHck",
-              "tags": [
-                "debates",
-                "frontend"
-              ],
-              "videoId": "FhZOeqUXHck",
-              "embedUrl": "https://www.youtube.com/embed/FhZOeqUXHck"
-            }
-          ]
-        },
-        {
-          "year": 2021,
-          "talks": [
-            {
-              "title": "Алексей Золотых — Гиперавтоматизированный пайплайн, или Почему матрица должна победить",
-              "conference": "HolyJS",
-              "year": 2021,
-              "lang": "ru",
-              "video": "https://youtu.be/P5TVBhMOVJY",
-              "tags": [
-                "automation",
-                "ci-cd",
-                "frontend"
-              ],
-              "videoId": "P5TVBhMOVJY",
-              "embedUrl": "https://www.youtube.com/embed/P5TVBhMOVJY"
-            }
-          ]
-        },
-        {
-          "year": 2020,
-          "talks": [
-            {
-              "title": "Алексей Золотых — Решения, которые мы принимаем. Личный взгляд на архитектуру",
-              "conference": "HolyJS",
-              "year": 2020,
-              "lang": "ru",
-              "video": "https://youtu.be/xXrXlAvwB8E",
-              "tags": [
-                "architecture"
-              ],
-              "videoId": "xXrXlAvwB8E",
-              "embedUrl": "https://www.youtube.com/embed/xXrXlAvwB8E"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "FrontendConf",
-      "years": [
-        {
-          "year": 2025,
-          "talks": [
-            {
-              "title": "От мечты к провалу: как загубить фронтенд-проект / Алексей Золотых",
-              "conference": "FrontendConf",
-              "year": 2025,
-              "lang": "ru",
-              "video": "https://youtu.be/g0xZ2gxhkjM",
-              "tags": [
-                "frontend",
-                "project-failure"
-              ],
-              "videoId": "g0xZ2gxhkjM",
-              "embedUrl": "https://www.youtube.com/embed/g0xZ2gxhkjM"
-            }
-          ]
-        },
-        {
-          "year": 2024,
-          "talks": [
-            {
-              "title": "Дебаты «Большой рефакторинг vs Постепенные оптимизации»",
-              "conference": "FrontendConf",
-              "year": 2024,
-              "lang": "ru",
-              "video": "https://youtu.be/GDB840NZlHU",
-              "tags": [
-                "refactoring",
-                "optimization",
-                "debates"
-              ],
-              "videoId": "GDB840NZlHU",
-              "embedUrl": "https://www.youtube.com/embed/GDB840NZlHU"
-            }
-          ]
-        },
-        {
-          "year": 2019,
-          "talks": [
-            {
-              "title": "Лайфхаки для фронтенд-разработчиков / Алексей Золотых (Wrike)",
-              "conference": "FrontendConf",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/IHPjaECmtCo",
-              "tags": [
-                "frontend",
-                "lifehacks"
-              ],
-              "videoId": "IHPjaECmtCo",
-              "embedUrl": "https://www.youtube.com/embed/IHPjaECmtCo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "404fest",
-      "years": [
-        {
-          "year": 2019,
-          "talks": [
-            {
-              "title": "Алексей Золотых — Лайфхаки во фронтенд-разработке",
-              "conference": "404fest",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/-7Ez9Jcap3k",
-              "tags": [
-                "frontend",
-                "lifehacks"
-              ],
-              "videoId": "-7Ez9Jcap3k",
-              "embedUrl": "https://www.youtube.com/embed/-7Ez9Jcap3k"
-            }
-          ]
-        }
-      ]
-    },
-    {
+      "title": "Чему можно научиться у Dart",
       "conference": "AvitoTech",
-      "years": [
-        {
-          "year": 2016,
-          "talks": [
-            {
-              "title": "Чему можно научиться у Dart | Алексей Золотых (Wrike)",
-              "conference": "AvitoTech",
-              "year": 2016,
-              "lang": "ru",
-              "video": "https://youtu.be/_hVeT_zFXXU",
-              "tags": [
-                "dart"
-              ],
-              "videoId": "_hVeT_zFXXU",
-              "embedUrl": "https://www.youtube.com/embed/_hVeT_zFXXU"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "Burning Lead",
-      "years": [
-        {
-          "year": 2023,
-          "talks": [
-            {
-              "title": "Технический долг. Разбираемся, кто, что и кому должен, Алексей Золотых, Мой Офис",
-              "conference": "Burning Lead",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/ZALrr2lU1Ls",
-              "tags": [
-                "technical-debt"
-              ],
-              "videoId": "ZALrr2lU1Ls",
-              "embedUrl": "https://www.youtube.com/embed/ZALrr2lU1Ls"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "CodeFest",
-      "years": [
-        {
-          "year": 2023,
-          "talks": [
-            {
-              "title": "Никита Сидоров. Алексей Золотых. Семен Левенсон. Как отдать технический долг",
-              "conference": "CodeFest",
-              "year": 2023,
-              "lang": "ru",
-              "video": "https://youtu.be/O6ohmGViEwg",
-              "tags": [
-                "technical-debt",
-                "panel"
-              ],
-              "videoId": "O6ohmGViEwg",
-              "embedUrl": "https://www.youtube.com/embed/O6ohmGViEwg"
-            }
-          ]
-        },
-        {
-          "year": 2019,
-          "talks": [
-            {
-              "title": "#Frontend, Алексей Золотых, Сжимаем Javascript по-взрослому",
-              "conference": "CodeFest",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/feptFoey_bU",
-              "tags": [
-                "performance",
-                "compression",
-                "javascript"
-              ],
-              "videoId": "feptFoey_bU",
-              "embedUrl": "https://www.youtube.com/embed/feptFoey_bU"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "DevFest Siberia",
-      "years": [
-        {
-          "year": 2017,
-          "talks": [
-            {
-              "title": "Dart treeshaking для других платформ - Алексей Золотых | DevFest Siberia 2017",
-              "conference": "DevFest Siberia",
-              "year": 2017,
-              "lang": "ru",
-              "video": "https://youtu.be/xnZW02hmzbM",
-              "tags": [
-                "dart",
-                "treeshaking"
-              ],
-              "videoId": "xnZW02hmzbM",
-              "embedUrl": "https://www.youtube.com/embed/xnZW02hmzbM"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "MoscowJS",
-      "years": [
-        {
-          "year": 2021,
-          "talks": [
-            {
-              "title": "MoscowJS 50 — Тестируем подходы к тестированию — Алексей Золотых",
-              "conference": "MoscowJS",
-              "year": 2021,
-              "lang": "ru",
-              "video": "https://youtu.be/OBie_2cMHB8",
-              "tags": [
-                "testing"
-              ],
-              "videoId": "OBie_2cMHB8",
-              "embedUrl": "https://www.youtube.com/embed/OBie_2cMHB8"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "OdesaJS",
-      "years": [
-        {
-          "year": 2017,
-          "talks": [
-            {
-              "title": "Alexey Zolotykh \"Life Hacks for frontend developer\"",
-              "conference": "OdesaJS",
-              "year": 2017,
-              "lang": "en",
-              "video": "https://youtu.be/i3KueEClK8A",
-              "tags": [
-                "frontend",
-                "lifehacks"
-              ],
-              "videoId": "i3KueEClK8A",
-              "embedUrl": "https://www.youtube.com/embed/i3KueEClK8A"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "PiterJS",
-      "years": [
-        {
-          "year": 2019,
-          "talks": [
-            {
-              "title": "Алексей Золотых - Автоматизируй это. Гиперавтоматизированный пайплайн",
-              "conference": "PiterJS",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/F7JZlLIq4ZY",
-              "tags": [
-                "automation",
-                "ci-cd"
-              ],
-              "videoId": "F7JZlLIq4ZY",
-              "embedUrl": "https://www.youtube.com/embed/F7JZlLIq4ZY"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "React Russia",
-      "years": [
-        {
-          "year": 2019,
-          "talks": [
-            {
-              "title": "Алексей Золотых – Как не нужно делать. Несколько неприятных историй из жизни разработчика",
-              "conference": "React Russia",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/Y-C2AtDS7Os",
-              "tags": [
-                "anti-patterns",
-                "stories"
-              ],
-              "videoId": "Y-C2AtDS7Os",
-              "embedUrl": "https://www.youtube.com/embed/Y-C2AtDS7Os"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "SECON",
-      "years": [
-        {
-          "year": 2021,
-          "talks": [
-            {
-              "title": "Золотых Алексей, Epam - Вся власть бэкендам! Как вернуть власть на сервер или путь туда и обратно",
-              "conference": "SECON",
-              "year": 2021,
-              "lang": "ru",
-              "video": "https://youtu.be/yVkUp0-QrjI",
-              "tags": [
-                "backend",
-                "frontend"
-              ],
-              "videoId": "yVkUp0-QrjI",
-              "embedUrl": "https://www.youtube.com/embed/yVkUp0-QrjI"
-            }
-          ]
-        },
-        {
-          "year": 2019,
-          "talks": [
-            {
-              "title": "Золотых Алексей, infobip, Санкт-Петербург - GRAPHQL — НОВЫЙ REDUX",
-              "conference": "SECON",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/zJdNgCk4K9M",
-              "tags": [
-                "graphql",
-                "state-management"
-              ],
-              "videoId": "zJdNgCk4K9M",
-              "embedUrl": "https://www.youtube.com/embed/zJdNgCk4K9M"
-            }
-          ]
-        },
-        {
-          "year": 2018,
-          "talks": [
-            {
-              "title": "Золотых Алексей, Wrike, СПб - ЧТО ПОСЕЕШЬ, ТО И ПОЖМЕШЬ. ПОУЧИТЕЛЬНЫЕ ИСТОРИИ ПРО СЖАТИЕ JAVASCRIPT",
-              "conference": "SECON",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/kxY7n_g8z6M",
-              "tags": [
-                "performance",
-                "compression",
-                "javascript"
-              ],
-              "videoId": "kxY7n_g8z6M",
-              "embedUrl": "https://www.youtube.com/embed/kxY7n_g8z6M"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "UWDC",
-      "years": [
-        {
-          "year": 2024,
-          "talks": [
-            {
-              "title": "HTMX на практике. Алексей Золотых, МойОфис",
-              "conference": "UWDC",
-              "year": 2024,
-              "lang": "ru",
-              "video": "https://youtu.be/CIWDO_b6dIg",
-              "tags": [
-                "htmx",
-                "frontend"
-              ],
-              "videoId": "CIWDO_b6dIg",
-              "embedUrl": "https://www.youtube.com/embed/CIWDO_b6dIg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conference": "Wrike Community",
-      "years": [
-        {
-          "year": 2019,
-          "talks": [
-            {
-              "title": "About zones in Dart — Алексей Золотых",
-              "conference": "Wrike Community",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/QIEhkvYRVNg",
-              "tags": [
-                "dart",
-                "zones"
-              ],
-              "videoId": "QIEhkvYRVNg",
-              "embedUrl": "https://www.youtube.com/embed/QIEhkvYRVNg"
-            },
-            {
-              "title": "GraphQL — новый Redux — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2019,
-              "lang": "ru",
-              "video": "https://youtu.be/gPb0y4ZND9c",
-              "tags": [
-                "graphql",
-                "state-management"
-              ],
-              "videoId": "gPb0y4ZND9c",
-              "embedUrl": "https://www.youtube.com/embed/gPb0y4ZND9c"
-            }
-          ]
-        },
-        {
-          "year": 2018,
-          "talks": [
-            {
-              "title": "Алиса в стране JS. Как Dart живёт в браузере — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/Bk-uJgo5GO4",
-              "tags": [
-                "dart",
-                "javascript"
-              ],
-              "videoId": "Bk-uJgo5GO4",
-              "embedUrl": "https://www.youtube.com/embed/Bk-uJgo5GO4"
-            },
-            {
-              "title": "Рефакторинг — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/1GslR1HJnwI",
-              "tags": [
-                "refactoring"
-              ],
-              "videoId": "1GslR1HJnwI",
-              "embedUrl": "https://www.youtube.com/embed/1GslR1HJnwI"
-            },
-            {
-              "title": "Что посеешь, то и пожмешь. Поучительные истории про сжатие JavaScript — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/W6qx7SwgZsg",
-              "tags": [
-                "performance",
-                "compression",
-                "javascript"
-              ],
-              "videoId": "W6qx7SwgZsg",
-              "embedUrl": "https://www.youtube.com/embed/W6qx7SwgZsg"
-            },
-            {
-              "title": "Dart. Один язык — все платформы — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2018,
-              "lang": "ru",
-              "video": "https://youtu.be/bYjsdmrrFTI",
-              "tags": [
-                "dart"
-              ],
-              "videoId": "bYjsdmrrFTI",
-              "embedUrl": "https://www.youtube.com/embed/bYjsdmrrFTI"
-            }
-          ]
-        },
-        {
-          "year": 2017,
-          "talks": [
-            {
-              "title": "История самурая. Путь, который проходит Dart-код от IDE до браузера — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2017,
-              "lang": "ru",
-              "video": "https://youtu.be/G6a5YcqNx7g",
-              "tags": [
-                "dart",
-                "compilation"
-              ],
-              "videoId": "G6a5YcqNx7g",
-              "embedUrl": "https://www.youtube.com/embed/G6a5YcqNx7g"
-            },
-            {
-              "title": "Как привести в порядок миллион строк клиентского кода за неделю — Алексей Золотых, Wrike",
-              "conference": "Wrike Community",
-              "year": 2017,
-              "lang": "ru",
-              "video": "https://youtu.be/NF4JW86YM4s",
-              "tags": [
-                "refactoring",
-                "javascript",
-                "scale"
-              ],
-              "videoId": "NF4JW86YM4s",
-              "embedUrl": "https://www.youtube.com/embed/NF4JW86YM4s"
-            }
-          ]
-        }
-      ]
+      "year": 2016,
+      "lang": "ru",
+      "video": "https://youtu.be/_hVeT_zFXXU",
+      "tags": [
+        "dart"
+      ],
+      "videoId": "_hVeT_zFXXU",
+      "embedUrl": "https://www.youtube.com/embed/_hVeT_zFXXU"
     }
   ]
 }
