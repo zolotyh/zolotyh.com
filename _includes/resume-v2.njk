@@ -30,12 +30,25 @@ layout: base.njk
       </section>
 
       <section class="resume-section">
-        <h3 class="resume-section-label">{{ labels.skills or 'Skills' }}</h3>
-        <ul class="skill-list">
-          {% for skill in skills %}
-            <li>{{ skill }}</li>
+        <h2 class="resume-section-label">{{ labels.skills or 'Skills' }}</h2>
+        {% if skillCategories %}
+          {% for group in skillCategories %}
+            <div class="skill-category">
+              <h3 class="skill-category-label">{{ group.category }}</h3>
+              <ul class="skill-list">
+                {% for skill in group.items %}
+                  <li>{{ skill }}</li>
+                {% endfor %}
+              </ul>
+            </div>
           {% endfor %}
-        </ul>
+        {% else %}
+          <ul class="skill-list">
+            {% for skill in skills %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </section>
 
       <section class="resume-section">

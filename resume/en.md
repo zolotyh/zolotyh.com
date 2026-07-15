@@ -14,28 +14,38 @@ contacts:
     url: mailto:aazolotyh@yandex.ru
   - label: Telegram
     url: https://t.me/zolotyh
-skills:
-  - Engineering Management
-  - People Management
-  - Team Leadership
-  - Strategic Planning
-  - Delivery Management
-  - SRE
-  - DevOps
-  - Solution Architecture
-  - CI/CD
-  - Agile
-  - Scrum
-  - Kanban
-  - Kubernetes
-  - Linux
-  - Node.js
-  - JavaScript
-  - TypeScript
-  - Java
-  - Go
-  - Frontend
-  - Backend
+skillCategories:
+  - category: Management
+    items:
+      - Engineering Management
+      - People Management
+      - Team Leadership
+      - Strategic Planning
+      - Delivery Management
+      - Agile
+      - Scrum
+      - Kanban
+  - category: Architecture
+    items:
+      - Solution Architecture
+  - category: DevOps & SRE
+    items:
+      - SRE
+      - DevOps
+      - CI/CD
+      - Kubernetes
+      - Linux
+  - category: Backend
+    items:
+      - Java
+      - Go
+      - Node.js
+      - Backend
+  - category: Frontend
+    items:
+      - JavaScript
+      - TypeScript
+      - Frontend
 languages:
   - Russian — Native
   - English — B2 (Upper-Intermediate)

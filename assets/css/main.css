@@ -460,29 +460,36 @@ code {
   color: var(--sol-subtext1);
 }
 
+.skill-category {
+  margin-bottom: 1.25rem;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.skill-category-label {
+  font-family: var(--font-sans);
+  font-size: calc(.75rem + .1vw);
+  font-weight: 600;
+  font-variation-settings: 'wght' 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sol-heading);
+  margin: 0 0 0.5rem;
+}
+
 .skill-list {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.25rem;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
 .skill-list li {
-  padding: 0.25rem 0.75rem;
-  background: var(--sol-surface0);
-  border-radius: 9999px;
-  font-size: calc(1rem + .25vw);
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-variation-settings: 'wght' 500;
-  color: var(--sol-heading);
-  transition: background-color 0.2s ease;
-}
-
-.skill-list li:hover {
-  background: var(--sol-surface1);
+  font-size: calc(.75em + .1vw);
+  line-height: 1.5;
+  color: var(--sol-text);
+  margin-bottom: 0.25rem;
 }
 
 /* Resume main content */
@@ -646,7 +653,6 @@ code {
   }
 
   .skill-list li {
-    background: #eee;
     color: #111;
   }
 
