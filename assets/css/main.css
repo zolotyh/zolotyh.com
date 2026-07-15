@@ -1,14 +1,14 @@
 /* Solarized colors */
 :root {
   --font-sans: 'Tilda Sans VF', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-serif: 'Tinos', Georgia, 'Times New Roman', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   color-scheme: light dark;
 
   /* Solarized Light */
   --sol-base: #fdf6e3;
   --sol-mantle: #eee8d5;
   --sol-crust: #eee8d5;
-  --sol-text: #586e75;
+  --sol-text: #3a5a65;
   --sol-heading: #073642;
   --sol-subtext1: #657b83;
   --sol-subtext0: #93a1a1;
@@ -47,7 +47,7 @@
   --sol-base: #fdf6e3;
   --sol-mantle: #eee8d5;
   --sol-crust: #eee8d5;
-  --sol-text: #586e75;
+  --sol-text: #3a5a65;
   --sol-heading: #073642;
   --sol-subtext1: #657b83;
   --sol-subtext0: #93a1a1;
@@ -85,11 +85,11 @@
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.75rem);
-  --text-3xl: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
-  --text-4xl: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
-  --text-hero: clamp(3.5rem, 2.5rem + 4vw, 6rem);
+  --text-xl: 1.375rem;
+  --text-2xl: clamp(1.75rem, 1.5rem + 1.25vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 1.75rem + 1.5vw, 3rem);
+  --text-4xl: clamp(3rem, 2.25rem + 3vw, 4.5rem);
+  --text-hero: clamp(4rem, 3rem + 5vw, 7.5rem);
 }
 
 * {
@@ -97,7 +97,7 @@
 }
 
 html {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -105,11 +105,13 @@ html {
 body {
   font-family: var(--font-serif);
   font-size: var(--text-base);
-  font-size-adjust: 0.459;
+  font-variant-numeric: lining-nums proportional-nums;
   font-feature-settings: 'kern' 1, 'liga' 1;
+  text-rendering: optimizeLegibility;
   background-color: var(--sol-base);
   color: var(--sol-text);
-  line-height: 1.65;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
   margin: 0;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -122,8 +124,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-sans);
-  font-size-adjust: 0.44;
   font-feature-settings: 'kern' 1, 'liga' 1, 'tnum' 1;
+  text-rendering: optimizeLegibility;
   color: var(--sol-heading);
   line-height: 1.2;
   margin-top: 1.5em;
@@ -167,7 +169,6 @@ code {
   font-size: var(--text-sm);
   font-weight: 600;
   font-variation-settings: 'wght' 600;
-  font-size-adjust: 0.44;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -228,7 +229,6 @@ code {
   font-size: var(--text-sm);
   font-weight: 600;
   font-variation-settings: 'wght' 600;
-  font-size-adjust: 0.44;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--sol-heading);
@@ -272,7 +272,6 @@ code {
   font-size: var(--text-sm);
   font-weight: 600;
   font-variation-settings: 'wght' 600;
-  font-size-adjust: 0.44;
   letter-spacing: 0.02em;
   transition: all 0.2s ease;
 }
@@ -351,7 +350,6 @@ code {
   font-size: var(--text-xs);
   font-weight: 700;
   font-variation-settings: 'wght' 700;
-  font-size-adjust: 0.44;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--sol-heading);
@@ -411,7 +409,6 @@ code {
   font-family: var(--font-sans);
   font-weight: 500;
   font-variation-settings: 'wght' 500;
-  font-size-adjust: 0.44;
   color: var(--sol-heading);
   transition: background-color 0.2s ease;
 }

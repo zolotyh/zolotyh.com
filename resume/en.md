@@ -1,8 +1,8 @@
 ---
-title: Alexey Zolotykh — Resume
+title: Alexey Zolotyh — Resume
 lang: en
 layout: resume-v2.njk
-name: Alexey Zolotykh
+name: Alexey Zolotyh
 role: Head of Engineering / Engineering Manager / Team Lead
 location: Saint Petersburg, Russia
 updated: Updated 14 July 2026
