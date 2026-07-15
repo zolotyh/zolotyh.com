@@ -1,5 +1,6 @@
 ---
 title: Алексей Золотых — Резюме
+description: Резюме Алексея Золотых — Head of Engineering / Engineering Manager / Team Lead с 18+ годами в разработке.
 lang: ru
 layout: resume-v2.njk
 name: Алексей Золотых

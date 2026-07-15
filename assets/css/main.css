@@ -79,19 +79,6 @@
   --sol-link: #eee8d5;
 }
 
-/* Fluid type scale */
-:root {
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.375rem;
-  --text-2xl: clamp(1.75rem, 1.5rem + 1.25vw, 2.25rem);
-  --text-3xl: clamp(2.25rem, 1.75rem + 1.5vw, 3rem);
-  --text-4xl: clamp(3rem, 2.25rem + 3vw, 4.5rem);
-  --text-hero: clamp(4rem, 3rem + 5vw, 7.5rem);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -104,25 +91,48 @@ html {
 
 body {
   font-family: var(--font-serif);
-  font-size: var(--text-base);
+  font-size: 1.125rem;
   font-variant-numeric: lining-nums proportional-nums;
   font-feature-settings: 'kern' 1, 'liga' 1;
   text-rendering: optimizeLegibility;
   background-color: var(--sol-base);
   color: var(--sol-text);
-  line-height: 1.75;
-  letter-spacing: 0.01em;
+  line-height: calc(1.5em + .2vw);
   margin: 0;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+@media screen and (min-width: 48em) {
+  body {
+    font-size: calc(.448vw + .9533rem);
+  }
+}
+
+@media screen and (min-width: 187.5em) {
+  body {
+    font-size: 1.625rem;
+  }
+}
+
+p,
+li,
+blockquote,
+dl,
+dt,
+figcaption,
+label,
+textarea {
+  line-height: calc(1.5em + .2vw);
+}
+
+p {
+  margin: calc(1em + .5vw) 0;
+}
+
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: var(--font-sans);
   font-feature-settings: 'kern' 1, 'liga' 1, 'tnum' 1;
   text-rendering: optimizeLegibility;
@@ -131,6 +141,64 @@ h6 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   text-wrap: balance;
+}
+
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  font-feature-settings: 'kern' 1, 'liga' 1, 'tnum' 1;
+  text-rendering: optimizeLegibility;
+  color: var(--sol-heading);
+  line-height: calc(1.3em + .2 * (100vw - 21em) / 14);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: calc(1.625rem + 1.6vw);
+  margin: 0 0 1.5rem;
+}
+
+h2 {
+  font-size: calc(1.375rem + 1.6vw);
+  margin: 0 0 1rem;
+}
+
+h3 {
+  font-size: calc(1.5rem + .25vw);
+  margin: 2em 0 0.75em;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: calc(1.125rem + .25vw);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+h5 {
+  font-size: calc(1rem + .25vw);
+  font-style: italic;
+}
+
+h6 {
+  font-size: calc(1rem + .25vw);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1550px) {
+  h1 {
+    font-size: 2.13894em;
+  }
+
+  h2 {
+    font-size: 2.14857em;
+  }
 }
 
 a {
@@ -146,7 +214,7 @@ a:hover {
 
 code {
   font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
-  font-size: 0.9em;
+  font-size: calc(.75em + .1vw);
   background: var(--sol-surface0);
   color: var(--sol-heading);
   padding: 0.15em 0.35em;
@@ -166,7 +234,7 @@ code {
   border-top: 3px solid var(--sol-accent);
   border-bottom: 1px solid var(--sol-surface0);
   font-family: var(--font-sans);
-  font-size: var(--text-sm);
+  font-size: calc(.75em + .1vw);
   font-weight: 600;
   font-variation-settings: 'wght' 600;
   text-transform: uppercase;
@@ -199,7 +267,7 @@ code {
   padding: 0;
   font: inherit;
   font-family: var(--font-sans);
-  font-size: var(--text-sm);
+  font-size: calc(.75em + .1vw);
   font-weight: 600;
   font-variation-settings: 'wght' 600;
   text-transform: uppercase;
@@ -220,35 +288,35 @@ code {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 70vh;
+  min-height: 60vh;
   padding: 4rem 1.5rem;
 }
 
 .hero-label {
   font-family: var(--font-sans);
-  font-size: var(--text-sm);
+  font-size: calc(1.125rem + .25vw);
   font-weight: 600;
   font-variation-settings: 'wght' 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 1px;
   color: var(--sol-heading);
   margin-bottom: 1rem;
 }
 
 .hero-title {
   font-family: var(--font-sans);
-  font-size: var(--text-hero);
+  font-size: calc(1.625rem + 1.6vw);
   font-weight: 700;
   font-variation-settings: 'wght' 700;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   color: var(--sol-heading);
   margin: 0 0 1.5rem;
 }
 
 .hero-lead {
-  max-width: 55ch;
-  font-size: var(--text-xl);
+  max-width: 70ch;
+  font-size: calc(1.5rem + .25vw);
   margin-bottom: 2.5rem;
   color: var(--sol-text);
 }
@@ -265,11 +333,11 @@ code {
   align-items: center;
   padding: 0.75rem 1.5rem;
   border: 1px solid var(--sol-surface0);
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   color: var(--sol-heading);
   text-decoration: none;
   font-family: var(--font-sans);
-  font-size: var(--text-sm);
+  font-size: calc(.75em + .1vw);
   font-weight: 600;
   font-variation-settings: 'wght' 600;
   letter-spacing: 0.02em;
@@ -284,7 +352,7 @@ code {
 
 /* Resume */
 .resume {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 3rem 1.5rem 5rem;
 }
@@ -298,18 +366,18 @@ code {
 
 .resume-name {
   font-family: var(--font-sans);
-  font-size: var(--text-4xl);
+  font-size: calc(1.625rem + 1.6vw);
   font-weight: 700;
   font-variation-settings: 'wght' 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   color: var(--sol-heading);
   margin: 0 0 0.5rem;
 }
 
 .resume-role {
   font-family: var(--font-sans);
-  font-size: var(--text-xl);
+  font-size: calc(1.5rem + .25vw);
   font-weight: 500;
   font-variation-settings: 'wght' 500;
   color: var(--sol-accent);
@@ -317,15 +385,15 @@ code {
 }
 
 .resume-update {
-  font-size: var(--text-sm);
+  font-size: calc(.75em + .1vw);
   color: var(--sol-subtext1);
   margin: 0;
 }
 
 .resume-grid {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 3.5rem;
+  grid-template-columns: 320px 1fr;
+  gap: 5rem;
   align-items: start;
 }
 
@@ -347,11 +415,11 @@ code {
   align-items: center;
   gap: 0.75rem;
   font-family: var(--font-sans);
-  font-size: var(--text-xs);
+  font-size: calc(1rem + .25vw);
   font-weight: 700;
   font-variation-settings: 'wght' 700;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 1px;
   color: var(--sol-heading);
   margin: 0 0 0.875rem;
 }
@@ -372,7 +440,7 @@ code {
 
 .contact-list li {
   margin-bottom: 0.5rem;
-  font-size: var(--text-sm);
+  font-size: calc(.75em + .1vw);
   line-height: 1.5;
 }
 
@@ -405,7 +473,7 @@ code {
   padding: 0.25rem 0.75rem;
   background: var(--sol-surface0);
   border-radius: 9999px;
-  font-size: var(--text-xs);
+  font-size: calc(1rem + .25vw);
   font-family: var(--font-sans);
   font-weight: 500;
   font-variation-settings: 'wght' 500;
@@ -420,7 +488,7 @@ code {
 /* Resume main content */
 .resume-main h2 {
   font-family: var(--font-sans);
-  font-size: var(--text-2xl);
+  font-size: calc(1.375rem + 1.6vw);
   font-weight: 700;
   font-variation-settings: 'wght' 700;
   color: var(--sol-heading);
@@ -431,7 +499,7 @@ code {
 
 .resume-main h3 {
   font-family: var(--font-sans);
-  font-size: var(--text-xl);
+  font-size: calc(1.5rem + .25vw);
   font-weight: 700;
   font-variation-settings: 'wght' 700;
   color: var(--sol-heading);
@@ -447,7 +515,7 @@ code {
 }
 
 .resume-main h3 + p {
-  font-size: var(--text-sm);
+  font-size: calc(.75em + .1vw);
   color: var(--sol-subtext1);
   margin-top: 0;
   margin-bottom: 1rem;
@@ -458,7 +526,7 @@ code {
 }
 
 .resume-main p {
-  margin-bottom: 1rem;
+  margin: calc(1em + .5vw) 0;
 }
 
 .resume-main ul {
@@ -490,16 +558,12 @@ code {
 
   .site-nav a,
   .site-nav button {
-    font-size: var(--text-xs);
+    font-size: 0.75rem;
   }
 
   .hero {
     min-height: auto;
     padding: 3rem 1rem;
-  }
-
-  .hero-lead {
-    font-size: var(--text-lg);
   }
 
   .resume {
@@ -514,22 +578,12 @@ code {
   .resume-sidebar {
     position: static;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
   .resume-section {
     margin-bottom: 0;
-  }
-
-  .resume-name {
-    font-size: var(--text-3xl);
-  }
-}
-
-@media (max-width: 35rem) {
-  .resume-sidebar {
-    grid-template-columns: 1fr;
   }
 }
 

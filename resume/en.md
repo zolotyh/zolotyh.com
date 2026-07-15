@@ -1,5 +1,6 @@
 ---
 title: Alexey Zolotyh — Resume
+description: Resume of Alexey Zolotyh — Head of Engineering / Engineering Manager / Team Lead with 18+ years in software development.
 lang: en
 layout: resume-v2.njk
 name: Alexey Zolotyh

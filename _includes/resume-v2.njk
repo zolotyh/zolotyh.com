@@ -14,7 +14,7 @@ layout: base.njk
   <div class="resume-grid">
     <aside class="resume-sidebar">
       <section class="resume-section">
-        <h2 class="resume-section-label">{{ labels.contact or 'Contact' }}</h2>
+        <h3 class="resume-section-label">{{ labels.contact or 'Contact' }}</h3>
         <ul class="contact-list">
           {% for contact in contacts %}
             <li>
@@ -30,7 +30,7 @@ layout: base.njk
       </section>
 
       <section class="resume-section">
-        <h2 class="resume-section-label">{{ labels.skills or 'Skills' }}</h2>
+        <h3 class="resume-section-label">{{ labels.skills or 'Skills' }}</h3>
         <ul class="skill-list">
           {% for skill in skills %}
             <li>{{ skill }}</li>
@@ -39,7 +39,7 @@ layout: base.njk
       </section>
 
       <section class="resume-section">
-        <h2 class="resume-section-label">{{ labels.languages or 'Languages' }}</h2>
+        <h3 class="resume-section-label">{{ labels.languages or 'Languages' }}</h3>
         <ul class="contact-list">
           {% for language in languages %}
             <li><span>{{ language }}</span></li>
@@ -48,7 +48,7 @@ layout: base.njk
       </section>
 
       <section class="resume-section">
-        <h2 class="resume-section-label">{{ labels.education or 'Education' }}</h2>
+        <h3 class="resume-section-label">{{ labels.education or 'Education' }}</h3>
         <ul class="contact-list">
           {% for edu in education %}
             <li><span>{{ edu }}</span></li>

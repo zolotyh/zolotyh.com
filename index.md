@@ -1,5 +1,6 @@
 ---
 title: zolotyh.com
+description: Personal website and resume of Alexey Zolotyh, Head of Engineering and engineering leader with 18+ years in software development.
 layout: base.njk
 ---
 
