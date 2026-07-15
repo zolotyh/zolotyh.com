@@ -18,6 +18,7 @@ templateEngineOverride: njk
       <a href="/resume/en/" class="button button--light">Resume in English</a>
       <a href="/resume/" class="button button--light">Резюме на русском</a>
     </nav>
+    {% include "social-links.njk" %}
   </div>
 </section>
 

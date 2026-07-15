@@ -57,6 +57,7 @@ labels:
   skills: Skills
   languages: Languages
   education: Education
+  social: Social media
 ---
 
 ## Summary

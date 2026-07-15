@@ -44,6 +44,11 @@ layout: base.njk
       </section>
 
       <section class="resume-section">
+        <h3 class="resume-section-label">{{ labels.social or 'Social media' }}</h3>
+        {% include "social-links.njk" %}
+      </section>
+
+      <section class="resume-section">
         <h2 class="resume-section-label">{{ labels.skills or 'Skills' }}</h2>
         {% if skillCategories %}
           {% for group in skillCategories %}

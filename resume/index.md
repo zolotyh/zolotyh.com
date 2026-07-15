@@ -57,6 +57,7 @@ labels:
   skills: Навыки
   languages: Языки
   education: Образование
+  social: Социальные сети
 ---
 
 ## Summary
