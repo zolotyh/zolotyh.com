@@ -32,5 +32,6 @@ layout: base.njk
       <li>Стачки</li>
       <li>DUMP</li>
     </ul>
+    <p class="speaker-links"><a href="/talks/" class="button button--light">All talks</a></p>
   </div>
 </section>

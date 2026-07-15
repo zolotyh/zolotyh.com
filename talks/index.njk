@@ -1,0 +1,39 @@
+---
+title: Доклады — zolotyh.com
+description: Видео выступлений Алексея Золотых на конференциях, митапах и подкастах.
+layout: base.njk
+lang: ru
+---
+
+<section class="talks">
+  <h1>Доклады</h1>
+  <p class="talks-lead">Видео выступлений на конференциях, митапах и подкастах.</p>
+
+  {% for group in talks.byConference %}
+    <section class="talks-group">
+      <h2 class="talks-group-title">{{ group.conference }}</h2>
+      {% for year in group.years %}
+        <h3 class="talks-year-title">{{ year.year }}</h3>
+        <div class="talks-grid">
+          {% for talk in year.talks %}
+            <article class="talks-card">
+              <h4 class="talks-card-title">
+                <a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer">{{ talk.title }}</a>
+              </h4>
+              {% if talk.tags %}
+                <p class="talks-tags">
+                  {% for tag in talk.tags %}
+                    <span class="talks-tag">{{ tag }}</span>
+                  {% endfor %}
+                </p>
+              {% endif %}
+              <div class="talks-video">
+                <iframe src="{{ talk.embedUrl }}" title="{{ talk.title }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </section>
+  {% endfor %}
+</section>
