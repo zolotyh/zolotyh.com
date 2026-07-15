@@ -15,24 +15,27 @@ templateEngineOverride: njk
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-avatar">
-      <img src="/assets/images/avatar.jpg" alt="Alexey Zolotyh" width="180" height="180">
-    </div>
-    <p class="hero-label">Engineering leader &amp; speaker</p>
-    <h1 class="hero-title">Alexey Zolotyh</h1>
-    <p class="hero-lead">Head of Engineering / Engineering Manager / Team Lead with 18+ years in software development.</p>
-    <nav class="hero-links">
+    <p class="hero-label hero-fade-up" style="--fade-delay: 0.1s;">Engineering leader &amp; speaker</p>
+    <h1 class="hero-title hero-fade-up" style="--fade-delay: 0.2s;">Alexey Zolotyh</h1>
+    <p class="hero-lead hero-fade-up" style="--fade-delay: 0.3s;">Head of Engineering / Engineering Manager / Team Lead with 18+ years in software development.</p>
+    <nav class="hero-links hero-fade-up" style="--fade-delay: 0.4s;">
       <a href="/resume/en/" class="button button--light">Resume in English</a>
       <a href="/resume/" class="button button--light">Резюме на русском</a>
     </nav>
-    {% include "social-links.njk" %}
   </div>
 </section>
 
 <section class="speaker">
   <div class="speaker-content">
-    <h2 class="speaker-title">50+ выступлений</h2>
-    <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP и других.</p>
+    <div class="speaker-header">
+      <div class="speaker-avatar">
+        <img src="/assets/images/avatar.jpg" alt="Alexey Zolotyh" width="180" height="180">
+      </div>
+      <div class="speaker-intro">
+        <h2 class="speaker-title">50+ выступлений</h2>
+        <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP и других.</p>
+      </div>
+    </div>
 
     {% set featuredTalks = talks.all | selectattr('featured') %}
     <div class="speaker-talks">

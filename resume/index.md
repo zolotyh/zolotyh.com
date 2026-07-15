@@ -10,8 +10,8 @@ updated: Обновлено 14 июля 2026
 contacts:
   - label: +7 (995) 590-29-76
     url: tel:+79955902976
-  - label: aazolotyh@yandex.ru
-    url: mailto:aazolotyh@yandex.ru
+  - label: info@zolotyh.com
+    url: mailto:info@zolotyh.com
   - label: Telegram
     url: https://t.me/zolotyh
 skillCategories:
