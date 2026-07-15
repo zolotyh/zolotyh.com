@@ -6,6 +6,13 @@ templateEngineOverride: njk
 ---
 
 <section class="hero hero--with-image">
+  <div class="hero-carousel">
+    <img src="/assets/images/hero-carousel/carousel-1.jpg" alt="" loading="eager" width="1600" height="1067">
+    <img src="/assets/images/hero-carousel/carousel-2.jpg" alt="" loading="eager" width="1600" height="1067">
+    <img src="/assets/images/hero-carousel/carousel-3.jpg" alt="" loading="eager" width="1600" height="1067">
+    <img src="/assets/images/hero-carousel/carousel-4.jpg" alt="" loading="eager" width="1600" height="1067">
+    <img src="/assets/images/hero-carousel/carousel-5.jpg" alt="" loading="eager" width="1600" height="1067">
+  </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-avatar">
