@@ -305,25 +305,35 @@ code {
   border-left: 1px solid var(--sol-surface0);
 }
 
-.site-utils button {
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
   color: var(--sol-heading);
-  text-decoration: none;
   background: none;
   border: none;
-  padding: 0;
-  font: inherit;
-  font-family: var(--font-sans);
-  font-size: calc(.75em + .1vw);
-  font-weight: 600;
-  font-variation-settings: 'wght' 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
-.site-utils button:hover {
+.icon-button:hover {
   color: var(--sol-accent);
+}
+
+.icon-button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.theme-icon {
+  display: none;
+}
+
+.theme-icon--active {
+  display: block;
 }
 
 /* Hero */
@@ -606,7 +616,6 @@ code {
   gap: 1rem;
 }
 
-.resume-actions button,
 .resume-actions a {
   font-family: var(--font-sans);
   font-size: calc(.75em + .1vw);
@@ -615,15 +624,10 @@ code {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--sol-heading);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.resume-actions button:hover,
 .resume-actions a:hover {
   color: var(--sol-accent);
 }
@@ -831,8 +835,7 @@ code {
     gap: 0.75rem;
   }
 
-  .site-nav a,
-  .site-utils button {
+  .site-nav a {
     font-size: 0.75rem;
   }
 
