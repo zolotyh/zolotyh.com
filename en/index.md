@@ -1,21 +1,21 @@
 ---
-title: Алексей Золотых — инженерный лидер и спикер
-description: Личный сайт и резюме Алексея Золотых — Head of Engineering и инженерного лидера с 18+ годами в разработке.
+title: Alexey Zolotyh — Engineering Leader & Speaker
+description: Personal website and resume of Alexey Zolotyh, Head of Engineering and engineering leader with 18+ years in software development.
 layout: base.njk
 templateEngineOverride: njk
-lang: ru
-alternateUrl: /en/
+lang: en
+alternateUrl: /
 seo: |
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Алексей Золотых",
-    "alternateName": "Alexey Zolotyh",
-    "url": "https://zolotyh.com",
+    "name": "Alexey Zolotyh",
+    "alternateName": "Алексей Золотых",
+    "url": "https://zolotyh.com/en/",
     "image": "https://zolotyh.com/assets/images/avatar.jpg",
     "jobTitle": "Head of Engineering",
-    "description": "Инженерный лидер и спикер с 18+ годами в разработке программного обеспечения.",
+    "description": "Engineering leader and speaker with 18+ years in software development.",
     "sameAs": [
       "https://www.youtube.com/@zolotyh",
       "https://github.com/zolotyh",
@@ -36,9 +36,9 @@ seo: |
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-label hero-fade-up" style="--fade-delay: 0.1s;">Инженерный лидер и спикер</p>
-    <h1 class="hero-title hero-fade-up" style="--fade-delay: 0.2s;">Алексей Золотых</h1>
-    <p class="hero-lead hero-fade-up" style="--fade-delay: 0.3s;">Head of Engineering / Engineering Manager / Team Lead с 18+ годами в разработке программного обеспечения.</p>
+    <p class="hero-label hero-fade-up" style="--fade-delay: 0.1s;">Engineering leader &amp; speaker</p>
+    <h1 class="hero-title hero-fade-up" style="--fade-delay: 0.2s;">Alexey Zolotyh</h1>
+    <p class="hero-lead hero-fade-up" style="--fade-delay: 0.3s;">Head of Engineering / Engineering Manager / Team Lead with 18+ years in software development.</p>
     <nav class="hero-links hero-fade-up" style="--fade-delay: 0.4s;">
       <a href="/resume/en/" class="button button--light">Resume in English</a>
       <a href="/resume/" class="button button--light">Резюме на русском</a>
@@ -50,11 +50,11 @@ seo: |
   <div class="speaker-content">
     <div class="speaker-header">
       <div class="speaker-avatar">
-        <img src="/assets/images/avatar.jpg" alt="Алексей Золотых" width="180" height="180">
+        <img src="/assets/images/avatar.jpg" alt="Alexey Zolotyh" width="180" height="180">
       </div>
       <div class="speaker-intro">
-        <h2 class="speaker-title">50+ выступлений</h2>
-        <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP и других.</p>
+        <h2 class="speaker-title">50+ talks</h2>
+        <p class="speaker-lead">Since 2016 at conferences HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP and others.</p>
       </div>
     </div>
 
@@ -73,6 +73,6 @@ seo: |
       {% endfor %}
     </div>
 
-    <p class="speaker-links"><a href="/talks/" class="button">Все доклады</a></p>
+    <p class="speaker-links"><a href="/talks/en/" class="button">All talks</a></p>
   </div>
 </section>

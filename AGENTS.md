@@ -25,7 +25,7 @@ Eleventy source is `index.md`; output is `_site/`.
 
 ## Design conventions
 
-- Fonts: Tilda Sans VF for headings, Cormorant Garamond for body text. Fonts are self-hosted as WOFF2 with `font-display: swap`.
+- Fonts: Inter VF for headings, Source Serif 4 for body text. Fonts are self-hosted as WOFF2 with `font-display: swap`.
 - Theme: Solarized light/dark color palette via CSS custom properties, with a manual toggle and system-preference fallback.
 - Verify changes by building with `mise run build` before committing.
 - `.gitignore` excludes `node_modules/`, `_site/`, `merged.ttf`, and `.DS_Store`.

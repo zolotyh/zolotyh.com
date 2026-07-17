@@ -1,24 +1,24 @@
 ---
-title: Доклады — zolotyh.com
-description: Видео выступлений Алексея Золотых на конференциях, митапах и подкастах.
+title: Talks — zolotyh.com
+description: Videos of Alexey Zolotyh's talks at conferences, meetups, and podcasts.
 layout: base.njk
-lang: ru
-alternateUrl: /talks/en/
+lang: en
+alternateUrl: /talks/
 ---
 
 <section class="talks">
-  <h1>Доклады</h1>
-  <p class="talks-lead">50+ выступлений на конференциях, митапах и подкастах. Здесь собраны записи докладов, а также слайды к некоторым из них.</p>
+  <h1>Talks</h1>
+  <p class="talks-lead">50+ talks at conferences, meetups, and podcasts. Here are recordings of talks, plus slides for some of them.</p>
 
   {% set featuredTalks = talks.all | selectattr('featured') %}
   <section class="talks-featured" aria-labelledby="talks-featured-title">
-    <h2 id="talks-featured-title" class="talks-section-title">Избранные</h2>
+    <h2 id="talks-featured-title" class="talks-section-title">Featured</h2>
     <div class="talks-grid talks-grid--featured">
       {% for talk in featuredTalks %}
         <article class="talks-card talks-card--featured" data-tags="{{ talk.tags | join(',') }}">
           <div class="talks-media" data-embed-url="{{ talk.embedUrl }}" data-title="{{ talk.title }}">
             <img class="talks-thumbnail" src="https://img.youtube.com/vi/{{ talk.videoId }}/maxresdefault.jpg" alt="{{ talk.title }}" loading="lazy" data-thumbnail-fallback="https://img.youtube.com/vi/{{ talk.videoId }}/hqdefault.jpg">
-            <button class="talks-play" type="button" aria-label="Воспроизвести: {{ talk.title }}">
+            <button class="talks-play" type="button" aria-label="Play: {{ talk.title }}">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
             </button>
           </div>
@@ -40,7 +40,7 @@ alternateUrl: /talks/en/
             {% endif %}
             {% if talk.slidesUrl %}
               <p class="talks-slides">
-                <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">Слайды</a>
+                <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">Slides</a>
               </p>
             {% endif %}
           </div>
@@ -58,8 +58,8 @@ alternateUrl: /talks/en/
     {% endfor %}
   {% endfor %}
 
-  <div class="talks-filters" role="group" aria-label="Фильтры по темам">
-    <button class="talks-filter talks-filter--active" type="button" data-filter="all">Все</button>
+  <div class="talks-filters" role="group" aria-label="Filter by topic">
+    <button class="talks-filter talks-filter--active" type="button" data-filter="all">All</button>
     {% for tag in allTags | sort %}
       <button class="talks-filter" type="button" data-filter="{{ tag }}">{{ tag }}</button>
     {% endfor %}
@@ -73,7 +73,7 @@ alternateUrl: /talks/en/
           <article class="talks-card" data-tags="{{ talk.tags | join(',') }}">
             <div class="talks-media" data-embed-url="{{ talk.embedUrl }}" data-title="{{ talk.title }}">
             <img class="talks-thumbnail" src="https://img.youtube.com/vi/{{ talk.videoId }}/maxresdefault.jpg" alt="{{ talk.title }}" loading="lazy" data-thumbnail-fallback="https://img.youtube.com/vi/{{ talk.videoId }}/hqdefault.jpg">
-              <button class="talks-play" type="button" aria-label="Воспроизвести: {{ talk.title }}">
+              <button class="talks-play" type="button" aria-label="Play: {{ talk.title }}">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
               </button>
             </div>
@@ -94,7 +94,7 @@ alternateUrl: /talks/en/
               {% endif %}
               {% if talk.slidesUrl %}
                 <p class="talks-slides">
-                  <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">Слайды</a>
+                  <a href="{{ talk.slidesUrl }}" target="_blank" rel="noopener noreferrer">Slides</a>
                 </p>
               {% endif %}
             </div>
@@ -150,7 +150,7 @@ alternateUrl: /talks/en/
 
     const region = document.createElement('div');
     region.setAttribute('role', 'region');
-    region.setAttribute('aria-label', 'Видео: ' + title);
+    region.setAttribute('aria-label', 'Video: ' + title);
     region.setAttribute('tabindex', '-1');
     region.style.position = 'absolute';
     region.style.inset = '0';

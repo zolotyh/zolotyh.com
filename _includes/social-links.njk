@@ -7,7 +7,7 @@
   { name: 'Instagram', url: 'https://www.instagram.com/alexzolotyh/', icon: 'instagram' }
 ] %}
 
-<nav class="social-links" aria-label="Social media">
+<nav class="social-links" aria-label="{% if lang == 'en' %}Social media{% else %}Социальные сети{% endif %}">
   {% for link in links %}
     <a href="{{ link.url }}" class="social-link" target="_blank" rel="noopener noreferrer me" aria-label="{{ link.name }}">
       {% if link.icon == 'linkedin' %}

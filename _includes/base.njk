@@ -1,43 +1,75 @@
 <!DOCTYPE html>
-<html lang="{{ lang or 'en' }}">
+<html lang="{{ lang or 'ru' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://img.youtube.com">
   <title>{{ title }}</title>
-  <meta name="description" content="{{ description or title }}">
+  <meta name="description" content="{{ description | default(title) }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description or title }}">
+  <meta property="og:description" content="{{ description | default(title) }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zolotyh.com{{ page.url }}">
-  <meta property="og:locale" content="{% if lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.image }}">
+  <meta property="og:locale" content="{% if lang == 'en' %}en_US{% else %}ru_RU{% endif %}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description | default(title) }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.image }}">
+  {% if alternateUrl %}
+  <link rel="alternate" hreflang="{% if lang == 'en' %}en{% else %}ru{% endif %}" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" hreflang="{% if lang == 'en' %}ru{% else %}en{% endif %}" href="{{ site.url }}{{ alternateUrl }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  {{ seo | safe }}
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <link rel="apple-touch-icon" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="128x128" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <script>
     (function () {
-      const stored = localStorage.getItem('theme');
-      const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', stored || system);
+      try {
+        const stored = localStorage.getItem('theme');
+        const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', stored || system);
+      } catch (e) {}
     })();
   </script>
-  <link rel="preload" href="/assets/fonts/TildaSans-VF.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/assets/fonts/CormorantGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/assets/fonts/CormorantGaramond-Regular-Cyrillic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/assets/fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="/assets/fonts/CormorantGaramond-Italic-Cyrillic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Inter-VF.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/SourceSerif4-VF.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/SourceSerif4-Italic-VF.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-  <header class="site-header no-print" lang="ru">
-    <a href="/" class="site-logo"><img src="/assets/favicon.svg" alt="zolotyh.com" width="32" height="32"></a>
+  <a class="skip-link" href="#main">{% if lang == 'en' %}Skip to content{% else %}Перейти к содержимому{% endif %}</a>
+  <header class="site-header no-print">
+    <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="site-logo"><img src="/assets/favicon.svg" alt="zolotyh.com" width="32" height="32"></a>
     <div class="site-header-right">
-      <nav class="site-nav" aria-label="Основная навигация">
-        <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>Главная</a>
-        <a href="/resume/" {% if page.url == '/resume/' or page.url == '/resume/en/' %}aria-current="page"{% endif %}>Резюме</a>
-        <a href="/talks/" {% if page.url == '/talks/' %}aria-current="page"{% endif %}>Доклады</a>
+      <nav class="site-nav" aria-label="{% if lang == 'en' %}Main navigation{% else %}Основная навигация{% endif %}">
+        {% if lang == 'en' %}
+          <a href="/en/" {% if page.url == '/en/' %}aria-current="page"{% endif %}>Home</a>
+          <a href="/resume/en/" {% if page.url == '/resume/en/' %}aria-current="page"{% endif %}>Resume</a>
+          <a href="/talks/en/" {% if page.url == '/talks/en/' %}aria-current="page"{% endif %}>Talks</a>
+        {% else %}
+          <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>Главная</a>
+          <a href="/resume/" {% if page.url == '/resume/' %}aria-current="page"{% endif %}>Резюме</a>
+          <a href="/talks/" {% if page.url == '/talks/' %}aria-current="page"{% endif %}>Доклады</a>
+        {% endif %}
       </nav>
+      <div class="lang-switcher" aria-label="{% if lang == 'en' %}Language{% else %}Выбор языка{% endif %}">
+        {% if lang == 'en' %}
+          <a href="{{ alternateUrl }}" class="lang-switcher__link" lang="ru" hreflang="ru">RU</a>
+          <span class="lang-switcher__divider" aria-hidden="true">/</span>
+          <span class="lang-switcher__current" aria-current="true">EN</span>
+        {% else %}
+          <span class="lang-switcher__current" aria-current="true">RU</span>
+          <span class="lang-switcher__divider" aria-hidden="true">/</span>
+          <a href="{{ alternateUrl }}" class="lang-switcher__link" lang="en" hreflang="en">EN</a>
+        {% endif %}
+      </div>
       <div class="site-utils">
-        <button id="theme-toggle" type="button" class="no-print icon-button" aria-label="Переключить тему">
+        <button id="theme-toggle" type="button" class="no-print icon-button" aria-label="{% if lang == 'en' %}Toggle theme{% else %}Переключить тему{% endif %}">
           <span class="theme-icon theme-icon--light" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="5"></circle>
@@ -60,7 +92,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main id="main">
     {% block content %}
       {{ content | safe }}
     {% endblock %}
@@ -73,14 +105,15 @@
 
       function updateIcon() {
         const current = document.documentElement.getAttribute('data-theme');
+        const isEn = document.documentElement.getAttribute('lang') === 'en';
         if (current === 'dark') {
           lightIcon.classList.add('theme-icon--active');
           darkIcon.classList.remove('theme-icon--active');
-          toggle.setAttribute('aria-label', 'Переключить на светлую тему');
+          toggle.setAttribute('aria-label', isEn ? 'Switch to light theme' : 'Переключить на светлую тему');
         } else {
           darkIcon.classList.add('theme-icon--active');
           lightIcon.classList.remove('theme-icon--active');
-          toggle.setAttribute('aria-label', 'Переключить на тёмную тему');
+          toggle.setAttribute('aria-label', isEn ? 'Switch to dark theme' : 'Переключить на тёмную тему');
         }
       }
 
@@ -88,7 +121,9 @@
         const current = document.documentElement.getAttribute('data-theme');
         const next = current === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
+        try {
+          localStorage.setItem('theme', next);
+        } catch (e) {}
         updateIcon();
       });
 

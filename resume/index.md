@@ -3,10 +3,12 @@ title: Алексей Золотых — Резюме
 description: Резюме Алексея Золотых — Head of Engineering / Engineering Manager / Team Lead с 18+ годами в разработке.
 lang: ru
 layout: resume-v2.njk
+alternateUrl: /resume/en/
 name: Алексей Золотых
 role: Head of Engineering / Engineering Manager / Team Lead
 location: Санкт-Петербург, Россия
 updated: Обновлено 14 июля 2026
+updatedDate: '2026-07-14'
 contacts:
   - label: +7 (995) 590-29-76
     url: tel:+79955902976

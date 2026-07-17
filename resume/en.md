@@ -3,10 +3,12 @@ title: Alexey Zolotyh — Resume
 description: Resume of Alexey Zolotyh — Head of Engineering / Engineering Manager / Team Lead with 18+ years in software development.
 lang: en
 layout: resume-v2.njk
+alternateUrl: /resume/
 name: Alexey Zolotyh
 role: Head of Engineering / Engineering Manager / Team Lead
 location: Saint Petersburg, Russia
 updated: Updated 14 July 2026
+updatedDate: '2026-07-14'
 contacts:
   - label: +7 (995) 590-29-76
     url: tel:+79955902976
