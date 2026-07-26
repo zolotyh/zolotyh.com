@@ -7,6 +7,7 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add("AGENTS.md");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy(".nojekyll");
 
   eleventyConfig.addTransform("typograf", function (content) {
     if (!(this.page.outputPath || "").endsWith(".html")) {
