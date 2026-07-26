@@ -1298,7 +1298,7 @@ code {
 
   .no-print,
   .site-header,
-  .social-links {
+  .resume-section:has(.social-links) {
     display: none !important;
   }
 
@@ -1312,38 +1312,38 @@ code {
     background: #fff;
     color: var(--gh-text);
     font-size: 10pt;
-    line-height: 1.45;
+    line-height: 1.2em;
     transition: none;
     orphans: 3;
     widows: 3;
   }
 
   .resume {
-    --line: 1.3em;
+    --line: 1em;
     max-width: none;
     padding: 0;
   }
 
   .resume-hero {
     text-align: left;
-    margin-bottom: 1.2em;
+    margin-bottom: 0.6em;
     padding-top: 0;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.4em;
     border-bottom: 1px solid var(--gh-surface1);
   }
 
   .resume-name {
-    font-size: 20pt;
-    margin: 0 0 0.15em;
+    font-size: 16pt;
+    margin: 0 0 0.1em;
   }
 
   .resume-role {
-    font-size: 12pt;
-    margin: 0 0 0.3em;
+    font-size: 10.5pt;
+    margin: 0 0 0.2em;
   }
 
   .resume-update {
-    font-size: 8pt;
+    font-size: 7.5pt;
     margin: 0;
   }
 
@@ -1379,30 +1379,6 @@ code {
     color: var(--gh-subtext1);
   }
 
-  .social-links {
-    display: block;
-  }
-
-  .social-link {
-    display: block;
-    width: auto;
-    height: auto;
-    font-size: 9pt;
-  }
-
-  .social-link svg {
-    display: none;
-  }
-
-  .social-link-name {
-    display: inline;
-  }
-
-  .social-link::after {
-    content: " — " attr(href);
-    color: var(--gh-subtext1);
-  }
-
   .resume-sidebar .resume-section:has(.skill-category) {
     grid-column: 1 / -1;
     columns: 3;
@@ -1419,13 +1395,12 @@ code {
   }
 
   .skill-category-label {
-    font-size: 8pt;
-    margin: 0 0 0.3em;
+    display: none;
   }
 
   .skill-list li {
     font-size: 9pt;
-    line-height: 1.4;
+    line-height: 1.2em;
   }
 
   .resume-main h2 {
@@ -1458,6 +1433,7 @@ code {
 
   .resume-main li {
     margin-bottom: 0.3em;
+    line-height: 1.2em;
   }
 
   .resume-main h3,
