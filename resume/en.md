@@ -52,7 +52,6 @@ languages:
   - Russian — Native
   - English — B2 (Upper-Intermediate)
 education:
-  - 'ITMO University, Saint Petersburg — M.S., Control and Informatics in Technical Systems, 2015'
   - 'Tyumen State Oil and Gas University — Engineer in ES, 2010'
 labels:
   contact: Contact
