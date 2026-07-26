@@ -64,7 +64,7 @@ labels:
 
 ## About
 
-Engineering Manager with 18+ years of software development experience. Currently leading a department of 40+ engineers across 4 cross-functional teams building web-based editors with real-time collaboration. Focused on technology strategy, reliability, performance, MTTR reduction, and people development.
+Engineering Manager with 18+ years of software development experience. Currently leading a department of 40+ engineers across 4 cross-functional teams building web-based editors with real-time collaboration. Focused on technology strategy, reliability, performance, MTTR reduction, and growing people — from juniors to team leads.
 
 ## Key Competencies
 
@@ -81,6 +81,7 @@ Engineering Manager with 18+ years of software development experience. Currently
 - Improved collaborative editing performance up to 7×, increased active collaborators from 10 to 50.
 - Increased team throughput by ~30% and reduced lead time by ~20% after moving to Kanban.
 - Introduced Sentry and postmortem reviews, reducing errors by ~10%.
+- Mentored 4 engineers into team leads who now run teams at other companies; dozens of engineers promoted in grade (junior→middle, middle→senior).
 - Ranked in the top 5% of employees in performance reviews three times.
 
 ## Experience
@@ -89,6 +90,7 @@ Engineering Manager with 18+ years of software development experience. Currently
 **Senior Engineering Manager** · Saint Petersburg · August 2022 — Present
 
 - Lead a department of 40+ specialists, including 4 teams with their own team leads: backend Java/Go, frontend TypeScript, C++, QA, UX, and test automation.
+- Established an engineering growth practice: regular grade promotions and team lead preparation.
 - Developed and defended a 5-year technology strategy focused on Reliability, Performance, Availability, and MTTR reduction.
 - Reduced the deployment cycle from weeks to hours and moved Web Vitals into the green zone.
 - Rebuilt the development process around Kanban: throughput increased by ~30% and average lead time decreased by ~20%.
@@ -103,7 +105,7 @@ Engineering Manager with 18+ years of software development experience. Currently
 **Team Leader / Solution Architect** · Moscow · August 2020 — August 2022
 
 - Team Lead / Solution Architect on commercial projects in Healthcare and Agritech (Syngenta).
-- People management for 8 engineers: growth, performance reviews, task allocation, 50+ interviews.
+- Resource manager for 8 engineers: growth, promotions, performance reviews, task allocation, 50+ interviews.
 - Participated in the promotion committee.
 - Led a healthcare project: a platform for launching Jupyter Notebook sandboxes for medical and research tasks.
 - Led an AWS serverless team for Syngenta (Lambda, DynamoDB, S3, SQS, SNS).

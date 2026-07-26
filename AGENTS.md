@@ -15,13 +15,22 @@ Eleventy source is `index.md`; output is `_site/`.
 
 ## Project structure
 
-- `.eleventy.js` — Eleventy configuration; passes `assets/` through unchanged and ignores `AGENTS.md`.
-- `_includes/` — Nunjucks layouts (`base.njk`, `resume-v2.njk`, etc.).
-- `index.md` — Home page.
+- `.eleventy.js` — Eleventy configuration; passes `assets/` and `CNAME` through unchanged, ignores `AGENTS.md`, and defines the `groupbyYearDesc` Nunjucks filter.
+- `_data/` — Global data: `site.json` (site metadata) and `talks.json` (talks list used by the talks pages).
+- `_includes/` — Nunjucks layouts/partials (`base.njk`, `resume-v2.njk`, `social-links.njk`).
+- `index.md` — Home page (Russian).
+- `en/index.md` — English home page.
+- `talks/index.njk` / `talks/en/index.njk` — Talks pages (Russian/English), rendered from `_data/talks.json` with the `groupbyYearDesc` filter.
 - `resume/index.md` — Russian resume page.
 - `resume/en.md` — English resume page.
 - `assets/css/` — Stylesheets (`fonts.css`, `main.css`).
 - `assets/fonts/` — Self-hosted WOFF2 files.
+- `CNAME` — Custom domain file, copied to output for GitHub Pages.
+- `.github/workflows/deploy.yml` — Deploys the built site to GitHub Pages on push to `master`.
+
+## Content conventions
+
+- The site is bilingual (ru default, en under `en/` or `*.en` paths). Pages set `lang` in front matter and link alternates via `alternateUrl`.
 
 ## Design conventions
 

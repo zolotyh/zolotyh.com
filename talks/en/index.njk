@@ -59,9 +59,9 @@ alternateUrl: /talks/
   {% endfor %}
 
   <div class="talks-filters" role="group" aria-label="Filter by topic">
-    <button class="talks-filter talks-filter--active" type="button" data-filter="all">All</button>
+    <button class="talks-filter talks-filter--active" type="button" data-filter="all" data-text="All">All</button>
     {% for tag in allTags | sort %}
-      <button class="talks-filter" type="button" data-filter="{{ tag }}">{{ tag }}</button>
+      <button class="talks-filter" type="button" data-filter="{{ tag }}" data-text="{{ tag }}">{{ tag }}</button>
     {% endfor %}
   </div>
 
