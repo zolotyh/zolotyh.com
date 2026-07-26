@@ -116,7 +116,7 @@ permalink: false
 ## Низкий приоритет
 
 ### 13. Мелочи
-- **Шрифты:** в `AGENTS.md` указаны Tilda Sans VF и Cormorant Garamond, а в `fonts.css` используются Inter и Source Serif 4. Привести документацию или реализацию к единому виду.
+- ~~**Шрифты:** в `AGENTS.md` указаны Tilda Sans VF и Cormorant Garamond, а в `fonts.css` используются Inter и Source Serif 4. Привести документацию или реализацию к единому виду.~~ Сделано: перешли на Manrope + Spectral, `AGENTS.md` обновлён.
 - **Лишний override:** `templateEngineOverride: njk` в `index.md` и `en/index.md` не нужен, так как `.eleventy.js` уже настроен на `njk`.
 - **Неиспользуемый атрибут:** `data-video-id` в карточках докладов хранится, но не читается. Удалить или использовать.
 - **Preconnect:** добавить `<link rel="preconnect" href="https://img.youtube.com">` для ускорения загрузки миниатюр.

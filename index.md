@@ -1,6 +1,6 @@
 ---
-title: Алексей Золотых — инженерный лидер и спикер
-description: Личный сайт и резюме Алексея Золотых — Head of Engineering и инженерного лидера с 18+ годами в разработке.
+title: Алексей Золотых — руководитель разработки и спикер
+description: Личный сайт и резюме Алексея Золотых — руководителя разработки с 18+ годами в разработке.
 layout: base.njk
 templateEngineOverride: njk
 lang: ru
@@ -14,8 +14,8 @@ seo: |
     "alternateName": "Alexey Zolotyh",
     "url": "https://zolotyh.com",
     "image": "https://zolotyh.com/assets/images/avatar.jpg",
-    "jobTitle": "Head of Engineering",
-    "description": "Инженерный лидер и спикер с 18+ годами в разработке программного обеспечения.",
+    "jobTitle": "Руководитель разработки",
+    "description": "Руководитель разработки и спикер с 18+ годами в разработке программного обеспечения.",
     "sameAs": [
       "https://www.youtube.com/@zolotyh",
       "https://github.com/zolotyh",
@@ -26,22 +26,16 @@ seo: |
   </script>
 ---
 
-<section class="hero hero--with-image">
-  <div class="hero-carousel">
-    <img src="/assets/images/hero-carousel/carousel-1.jpg" alt="" loading="eager" fetchpriority="high" decoding="async" width="1600" height="1067">
-    <img src="/assets/images/hero-carousel/carousel-2.jpg" alt="" loading="lazy" decoding="async" width="1600" height="1067">
-    <img src="/assets/images/hero-carousel/carousel-3.jpg" alt="" loading="lazy" decoding="async" width="1600" height="1067">
-    <img src="/assets/images/hero-carousel/carousel-4.jpg" alt="" loading="lazy" decoding="async" width="1600" height="1067">
-    <img src="/assets/images/hero-carousel/carousel-5.jpg" alt="" loading="lazy" decoding="async" width="1600" height="1067">
-  </div>
-  <div class="hero-overlay"></div>
+<section class="hero">
   <div class="hero-content">
-    <p class="hero-label hero-fade-up" style="--fade-delay: 0.1s;">Инженерный лидер и спикер</p>
-    <h1 class="hero-title hero-fade-up" style="--fade-delay: 0.2s;">Алексей Золотых</h1>
-    <p class="hero-lead hero-fade-up" style="--fade-delay: 0.3s;">Head of Engineering / Engineering Manager / Team Lead с 18+ годами в разработке программного обеспечения.</p>
-    <nav class="hero-links hero-fade-up" style="--fade-delay: 0.4s;">
-      <a href="/resume/en/" class="button button--light">Resume in English</a>
-      <a href="/resume/" class="button button--light">Резюме на русском</a>
+    <div class="hero-lockup hero-fade-up" style="--fade-delay: 0.1s;">
+      <img class="hero-avatar" src="/assets/images/portrait-square.jpg" alt="" width="112" height="112" loading="eager" fetchpriority="high" decoding="async">
+      <h1 class="hero-title">Алексей<br>Золотых</h1>
+    </div>
+    <p class="hero-lead hero-fade-up" style="--fade-delay: 0.2s;">Руководитель разработки</p>
+    <nav class="hero-links hero-fade-up" style="--fade-delay: 0.3s;">
+      <a href="/resume/" class="button">Резюме на русском</a>
+      <a href="/resume/en/" class="button">Resume in English</a>
     </nav>
   </div>
 </section>
@@ -49,9 +43,6 @@ seo: |
 <section class="speaker">
   <div class="speaker-content">
     <div class="speaker-header">
-      <div class="speaker-avatar">
-        <img src="/assets/images/avatar.jpg" alt="Алексей Золотых" width="180" height="180">
-      </div>
       <div class="speaker-intro">
         <h2 class="speaker-title">50+ выступлений</h2>
         <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP и других.</p>
@@ -66,8 +57,8 @@ seo: |
             <div class="speaker-talk-thumb">
               <img src="https://img.youtube.com/vi/{{ talk.videoId }}/mqdefault.jpg" alt="{{ talk.title }}" loading="lazy" width="320" height="180">
             </div>
-            <h3 class="speaker-talk-title">{{ talk.title }}</h3>
             <p class="speaker-talk-meta">{{ talk.conference }} · <time datetime="{{ talk.year }}">{{ talk.year }}</time></p>
+            <h3 class="speaker-talk-title">{{ talk.title }}</h3>
           </a>
         </article>
       {% endfor %}

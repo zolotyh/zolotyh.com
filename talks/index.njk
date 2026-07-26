@@ -23,14 +23,14 @@ alternateUrl: /talks/en/
             </button>
           </div>
           <div class="talks-card-body">
-            <h3 class="talks-card-title">
-              <a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer">{{ talk.title }}</a>
-            </h3>
             <p class="talks-card-meta">
               <time class="talks-card-year" datetime="{{ talk.year }}">{{ talk.year }}</time>
               <span class="talks-card-conf">{{ talk.conference }}</span>
               <span class="talks-card-lang">{{ talk.lang | upper }}</span>
             </p>
+            <h3 class="talks-card-title">
+              <a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer">{{ talk.title }}</a>
+            </h3>
             {% if talk.tags %}
               <p class="talks-tags">
                 {% for tag in talk.tags %}
@@ -72,19 +72,19 @@ alternateUrl: /talks/en/
         {% for talk in yearTalks %}
           <article class="talks-card" data-tags="{{ talk.tags | join(',') }}">
             <div class="talks-media" data-embed-url="{{ talk.embedUrl }}" data-title="{{ talk.title }}">
-            <img class="talks-thumbnail" src="https://img.youtube.com/vi/{{ talk.videoId }}/maxresdefault.jpg" alt="{{ talk.title }}" loading="lazy" data-thumbnail-fallback="https://img.youtube.com/vi/{{ talk.videoId }}/hqdefault.jpg">
+              <img class="talks-thumbnail" src="https://img.youtube.com/vi/{{ talk.videoId }}/maxresdefault.jpg" alt="{{ talk.title }}" loading="lazy" data-thumbnail-fallback="https://img.youtube.com/vi/{{ talk.videoId }}/hqdefault.jpg">
               <button class="talks-play" type="button" aria-label="Воспроизвести: {{ talk.title }}">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
               </button>
             </div>
             <div class="talks-card-body">
+              <p class="talks-card-meta">
+                <time class="talks-card-year" datetime="{{ talk.year }}">{{ talk.year }}</time>
+                <span class="talks-card-conf">{{ talk.conference }}</span>
+              </p>
               <h3 class="talks-card-title">
                 <a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer">{{ talk.title }}</a>
               </h3>
-              <p class="talks-card-meta">
-              <time class="talks-card-year" datetime="{{ talk.year }}">{{ talk.year }}</time>
-              <span class="talks-card-conf">{{ talk.conference }}</span>
-            </p>
               {% if talk.tags %}
                 <p class="talks-tags">
                   {% for tag in talk.tags %}

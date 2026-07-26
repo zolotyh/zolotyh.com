@@ -25,7 +25,9 @@ Eleventy source is `index.md`; output is `_site/`.
 
 ## Design conventions
 
-- Fonts: Inter VF for headings, Source Serif 4 for body text. Fonts are self-hosted as WOFF2 with `font-display: swap`.
+- Fonts: Manrope (variable, body text/UI/headings) + Spectral (accent serif for leads/quotes). Fonts are self-hosted as WOFF2 with `font-display: swap`, split into cyrillic/latin subsets via `unicode-range`.
+- Typography: HTML output is processed by Typograf (`.eleventy.js` transform, locale by `page.lang`) — quotes, dashes and non-breaking spaces are handled automatically. Do not add manual `&nbsp;` except where the template escapes Typograf rules (e.g. phone numbers in front matter).
+- No faux italics: Manrope has no italic axis, so `em`/`h5`/quotes must use Spectral Italic instead.
 - Theme: Solarized light/dark color palette via CSS custom properties, with a manual toggle and system-preference fallback.
 - Verify changes by building with `mise run build` before committing.
 - `.gitignore` excludes `node_modules/`, `_site/`, `merged.ttf`, and `.DS_Store`.

@@ -1,16 +1,16 @@
 ---
 title: Алексей Золотых — Резюме
-description: Резюме Алексея Золотых — Head of Engineering / Engineering Manager / Team Lead с 18+ годами в разработке.
+description: Резюме Алексея Золотых — руководителя разработки с 18+ годами в разработке.
 lang: ru
 layout: resume-v2.njk
 alternateUrl: /resume/en/
 name: Алексей Золотых
-role: Head of Engineering / Engineering Manager / Team Lead
+role: Руководитель разработки
 location: Санкт-Петербург, Россия
 updated: Обновлено 14 июля 2026
 updatedDate: '2026-07-14'
 contacts:
-  - label: +7 (995) 590-29-76
+  - label: '+7&nbsp;(995)&nbsp;590&#8209;29&#8209;76'
     url: tel:+79955902976
   - label: info@zolotyh.com
     url: mailto:info@zolotyh.com
@@ -62,7 +62,7 @@ labels:
   social: Социальные сети
 ---
 
-## Summary
+## О себе
 
 Руководитель инженерных команд с 18+ годами опыта в разработке. Сейчас руковожу отделом из 40+ специалистов в продукте веб-редакторов с real-time совместным редактированием. Фокусируюсь на технологической стратегии, надежности, производительности, снижении MTTR и развитии людей.
 
@@ -125,9 +125,3 @@ labels:
 - Работал с legacy code, рефакторинг, развитие build и CI/CD инфраструктуры.
 - Выступал на конференциях.
 
-### Ранний опыт
-- **Murano Software** — Frontend Team Lead · 2014–2015
-- **АйТиКуб** — Ведущий веб-программист · 2013–2014
-- **VUARO** — Senior Frontend Developer · 2011–2013
-- **Интерактивное агентство Ремарк** — Frontend Developer · 2007–2012
-- **Neo-Systems** — Программист · 2011

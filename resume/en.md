@@ -1,16 +1,16 @@
 ---
 title: Alexey Zolotyh — Resume
-description: Resume of Alexey Zolotyh — Head of Engineering / Engineering Manager / Team Lead with 18+ years in software development.
+description: Resume of Alexey Zolotyh — Engineering Manager with 18+ years in software development.
 lang: en
 layout: resume-v2.njk
 alternateUrl: /resume/
 name: Alexey Zolotyh
-role: Head of Engineering / Engineering Manager / Team Lead
+role: Engineering Manager
 location: Saint Petersburg, Russia
 updated: Updated 14 July 2026
 updatedDate: '2026-07-14'
 contacts:
-  - label: +7 (995) 590-29-76
+  - label: '+7&nbsp;(995)&nbsp;590&#8209;29&#8209;76'
     url: tel:+79955902976
   - label: info@zolotyh.com
     url: mailto:info@zolotyh.com
@@ -62,9 +62,9 @@ labels:
   social: Social media
 ---
 
-## Summary
+## About
 
-Engineering leader with 18+ years of software development experience. Currently leading a department of 40+ engineers across 4 cross-functional teams building web-based editors with real-time collaboration. Focused on technology strategy, reliability, performance, MTTR reduction, and people development.
+Engineering Manager with 18+ years of software development experience. Currently leading a department of 40+ engineers across 4 cross-functional teams building web-based editors with real-time collaboration. Focused on technology strategy, reliability, performance, MTTR reduction, and people development.
 
 ## Key Competencies
 
@@ -125,9 +125,3 @@ Engineering leader with 18+ years of software development experience. Currently 
 - Worked with legacy code, refactoring, and build / CI/CD infrastructure.
 - Spoke at conferences.
 
-### Earlier Career
-- **Murano Software** — Frontend Team Lead · 2014–2015
-- **AйТиКуб** — Lead Web Developer · 2013–2014
-- **VUARO** — Senior Frontend Developer · 2011–2013
-- **Remark Interactive Agency** — Frontend Developer · 2007–2012
-- **Neo-Systems** — Programmer · 2011
