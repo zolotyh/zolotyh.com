@@ -98,7 +98,7 @@ Engineering Manager with 18+ years of software development experience. Currently
 - Built a prototype for summarizing large files on k3s, Apache APISIX, and RustFS.
 - Introduced Sentry and postmortem reviews, cutting errors by ~10%.
 - Launched the MyOffice API website and migrated documentation from PDF to web.
-- Speaker at Codefest, HolyJS, FrontendConf, Стачки, and DUMP. Three times in the top 5% by performance review.
+- Speaker at Codefest, HolyJS, FrontendConf, nastachku.ru, and DUMP. Three times in the top 5% by performance review.
 
 ### EPAM Systems
 **Team Leader / Solution Architect** · Moscow · August 2020 — August 2022

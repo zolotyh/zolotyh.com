@@ -45,7 +45,7 @@ seo: |
     <div class="speaker-header">
       <div class="speaker-intro">
         <h2 class="speaker-title">50+ talks</h2>
-        <p class="speaker-lead">Since 2016 at conferences HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP and others.</p>
+        <p class="speaker-lead">Since 2016 at conferences HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, nastachku.ru, DUMP and others.</p>
       </div>
     </div>
 

@@ -45,7 +45,7 @@ seo: |
     <div class="speaker-header">
       <div class="speaker-intro">
         <h2 class="speaker-title">50+ выступлений</h2>
-        <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачки, DUMP и других.</p>
+        <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачка, DUMP и других.</p>
       </div>
     </div>
 

@@ -98,7 +98,7 @@ labels:
 - Собрал прототип сервиса саммаризации крупных файлов на k3s, Apache APISIX и RustFS.
 - Внедрил Sentry и postmortem-разборы, сократив количество ошибок примерно на 10%.
 - Разработал и запустил сайт API MyOffice, перевел документацию из PDF в веб-формат.
-- Спикер Codefest, HolyJS, FrontendConf, Стачки и DUMP. Трижды в топ-5% по performance review.
+- Спикер Codefest, HolyJS, FrontendConf, Стачка и DUMP. Трижды в топ-5% по performance review.
 
 ### EPAM Systems
 **Team Leader / Solution Architect** · Москва · Август 2020 — Август 2022
