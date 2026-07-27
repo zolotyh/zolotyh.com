@@ -1,5 +1,5 @@
 ---
-title: Алексей Золотых — руководитель разработки и спикер
+title: Алексей Золотых — руководитель разработки
 description: Личный сайт и резюме Алексея Золотых — руководителя разработки с 18+ годами в разработке.
 layout: base.njk
 templateEngineOverride: njk
@@ -15,7 +15,7 @@ seo: |
     "url": "https://zolotyh.com",
     "image": "https://zolotyh.com/assets/images/avatar.jpg",
     "jobTitle": "Руководитель разработки",
-    "description": "Руководитель разработки и спикер с 18+ годами в разработке программного обеспечения.",
+    "description": "Руководитель разработки с 18+ годами в разработке программного обеспечения.",
     "sameAs": [
       "https://www.youtube.com/@zolotyh",
       "https://github.com/zolotyh",

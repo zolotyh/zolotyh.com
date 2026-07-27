@@ -5,5 +5,9 @@
   "ruName": "Алексей Золотых",
   "jobTitle": "Engineering Manager",
   "ruJobTitle": "Руководитель разработки",
-  "image": "/assets/images/avatar.jpg"
+  "image": "/assets/images/og-card.jpg",
+  "imageRu": "/assets/images/og-card-ru.jpg",
+  "imageWidth": 1200,
+  "imageHeight": 630,
+  "twitter": "@zolotyh"
 }

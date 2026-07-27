@@ -1,5 +1,5 @@
 ---
-title: Alexey Zolotyh — Engineering Manager & Speaker
+title: Alexey Zolotyh — Engineering Manager
 description: Personal website and resume of Alexey Zolotyh, Engineering Manager with 18+ years in software development.
 layout: base.njk
 templateEngineOverride: njk
@@ -15,7 +15,7 @@ seo: |
     "url": "https://zolotyh.com/en/",
     "image": "https://zolotyh.com/assets/images/avatar.jpg",
     "jobTitle": "Engineering Manager",
-    "description": "Engineering Manager and speaker with 18+ years in software development.",
+    "description": "Engineering Manager with 18+ years in software development.",
     "sameAs": [
       "https://www.youtube.com/@zolotyh",
       "https://github.com/zolotyh",

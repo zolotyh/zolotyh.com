@@ -11,12 +11,21 @@
   <meta property="og:description" content="{{ description | default(title) }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.image }}">
+  {% set card = ogImage or (site.image if lang == 'en' else site.imageRu) %}
+  <meta property="og:site_name" content="zolotyh.com">
+  <meta property="og:image" content="{{ site.url }}{{ card }}">
+  <meta property="og:image:width" content="{{ site.imageWidth }}">
+  <meta property="og:image:height" content="{{ site.imageHeight }}">
+  <meta property="og:image:alt" content="{{ title }}">
   <meta property="og:locale" content="{% if lang == 'en' %}en_US{% else %}ru_RU{% endif %}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:locale:alternate" content="{% if lang == 'en' %}ru_RU{% else %}en_US{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ site.twitter }}">
+  <meta name="twitter:creator" content="{{ site.twitter }}">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description | default(title) }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.image }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ card }}">
+  <meta name="twitter:image:alt" content="{{ title }}">
   {% if alternateUrl %}
   <link rel="alternate" hreflang="{% if lang == 'en' %}en{% else %}ru{% endif %}" href="{{ site.url }}{{ page.url }}">
   <link rel="alternate" hreflang="{% if lang == 'en' %}ru{% else %}en{% endif %}" href="{{ site.url }}{{ alternateUrl }}">
