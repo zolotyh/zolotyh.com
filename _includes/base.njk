@@ -66,6 +66,7 @@
           <a href="/resume/" {% if page.url == '/resume/' %}aria-current="page"{% endif %}>Резюме</a>
           <a href="/talks/" {% if page.url == '/talks/' %}aria-current="page"{% endif %}>Доклады</a>
         {% endif %}
+        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
       <div class="lang-switcher" aria-label="{% if lang == 'en' %}Language{% else %}Выбор языка{% endif %}">
         {% if lang == 'en' %}
@@ -138,6 +139,70 @@
       });
 
       updateIcon();
+    })();
+  </script>
+  <script>
+    (function () {
+      const nav = document.querySelector('.site-nav');
+      if (!nav) return;
+      const indicator = nav.querySelector('.nav-indicator');
+      const current = nav.querySelector('a[aria-current="page"]');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const STORAGE_KEY = 'nav-indicator-pos';
+      let easing = 'cubic-bezier(0.25, 1, 0.5, 1)';
+      try {
+        if (CSS.supports('transition-timing-function: linear(0, 1)')) {
+          easing = 'linear(0, 0.0089 1.5%, 0.0349 3.1%, 0.0768 4.8%, 0.2275 9.5%, 0.3634 13.6%, 0.4872 17.7%, 0.6529 24.2%, 0.7774 30.2%, 0.8733 36.1%, 0.9415 41.9%, 0.9881 47.7%, 1.0174 53.8%, 1.0314 60.3%, 1.0307 65.9%, 1.0286 68.9%, 1.0216 74.9%, 1.0104 82.5%, 1.0021 90.6%, 1)';
+        }
+      } catch (e) {}
+
+      function keyframesFor(link) {
+        return {
+          transform: 'translateX(' + link.offsetLeft + 'px)',
+          width: link.offsetWidth + 'px'
+        };
+      }
+
+      function place(link, from) {
+        if (!link) {
+          indicator.style.opacity = '0';
+          return;
+        }
+        const to = keyframesFor(link);
+        const frames = from ? [from, to] : [to];
+        const animate = from && !reduceMotion.matches && (from.transform !== to.transform || from.width !== to.width);
+        indicator.animate(frames, {
+          duration: animate ? 600 : 0,
+          easing: easing,
+          fill: 'forwards'
+        });
+        indicator.style.opacity = '1';
+        try {
+          sessionStorage.setItem(STORAGE_KEY, JSON.stringify(to));
+        } catch (e) {}
+      }
+
+      function readPrev() {
+        try {
+          return JSON.parse(sessionStorage.getItem(STORAGE_KEY));
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function init() {
+        place(current, readPrev());
+      }
+
+      window.addEventListener('resize', function () {
+        place(current);
+      });
+
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(init);
+      } else {
+        init();
+      }
     })();
   </script>
   <script>
