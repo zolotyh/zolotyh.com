@@ -493,8 +493,8 @@ code {
 .hero-title {
   font-family: var(--font-sans);
   font-size: clamp(3.5rem, 13vw, 9rem);
-  font-weight: 800;
-  font-variation-settings: 'wght' 800;
+  font-weight: 700;
+  font-variation-settings: 'wght' 700;
   line-height: 0.95;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -504,7 +504,7 @@ code {
 
 .hero-char {
   display: inline-block;
-  font-variation-settings: 'wght' 800;
+  font-variation-settings: 'wght' 700;
   transform-origin: 50% 100%;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -598,7 +598,7 @@ code {
 
 .hero-line--outline .hero-char {
   color: transparent;
-  -webkit-text-stroke: 0.0125em var(--gh-heading);
+  -webkit-text-stroke: 0.015em var(--gh-heading);
 }
 
 @supports not (-webkit-text-stroke: 1px black) {
