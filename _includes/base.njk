@@ -54,7 +54,9 @@
 <body>
   <a class="skip-link" href="#main">{% if lang == 'en' %}Skip to content{% else %}Перейти к содержимому{% endif %}</a>
   <header class="site-header no-print">
-    <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="site-logo">zolotyh</a>
+    {% if page.url != '/' and page.url != '/en/' %}
+    <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="site-logo"><img class="site-logo-avatar" src="/assets/images/portrait-square.jpg" alt="" width="28" height="28" loading="eager" decoding="async">zolotyh</a>
+    {% endif %}
     <div class="site-header-right">
       <nav class="site-nav" aria-label="{% if lang == 'en' %}Main navigation{% else %}Основная навигация{% endif %}">
         {% if lang == 'en' %}

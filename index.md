@@ -28,12 +28,12 @@ seo: |
 
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-lockup hero-fade-up" style="--fade-delay: 0.1s;">
+    <div class="hero-meta">
       <img class="hero-avatar" src="/assets/images/portrait-square.jpg" alt="" width="112" height="112" loading="eager" fetchpriority="high" decoding="async">
-      <h1 class="hero-title">Алексей<br>Золотых</h1>
+      <p class="hero-role">Руководитель разработки</p>
     </div>
-    <p class="hero-lead hero-fade-up" style="--fade-delay: 0.2s;">Руководитель разработки</p>
-    <nav class="hero-links hero-fade-up" style="--fade-delay: 0.3s;">
+    <h1 class="hero-title" aria-label="Алексей Золотых"><span aria-hidden="true"><span class="hero-char" style="--i:0">А</span><span class="hero-char" style="--i:1">л</span><span class="hero-char" style="--i:2">е</span><span class="hero-char" style="--i:3">к</span><span class="hero-char" style="--i:4">с</span><span class="hero-char" style="--i:5">е</span><span class="hero-char" style="--i:6">й</span><br><span class="hero-line--outline"><span class="hero-char" style="--i:7">З</span><span class="hero-char" style="--i:8">о</span><span class="hero-char" style="--i:9">л</span><span class="hero-char" style="--i:10">о</span><span class="hero-char" style="--i:11">т</span><span class="hero-char" style="--i:12">ы</span><span class="hero-char" style="--i:13">х</span></span></span></h1>
+    <nav class="hero-links hero-fade-up" style="--fade-delay: 1s;">
       <a href="/resume/" class="button">Резюме на русском</a>
       <a href="/resume/en/" class="button">Resume in English</a>
     </nav>
@@ -43,8 +43,10 @@ seo: |
 <section class="speaker">
   <div class="speaker-content">
     <div class="speaker-header">
+      <h2 class="speaker-stat" aria-label="50+ выступлений"><span class="speaker-stat-num" aria-hidden="true">50+</span></h2>
       <div class="speaker-intro">
-        <h2 class="speaker-title">50+ выступлений</h2>
+        <p class="speaker-index">01</p>
+        <p class="speaker-stat-label">выступлений</p>
         <p class="speaker-lead">С 2016 года на конференциях HolyJS, FrontendConf, CodeFest, TeamleadConf, SECON, Стачка, DUMP и других.</p>
       </div>
     </div>

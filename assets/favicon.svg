@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="12" fill="#0f172a"/>
+  <rect width="100" height="100" rx="12" fill="#22272e"/>
   <g transform="rotate(45 50 50)">
-    <rect x="43" y="15" width="14" height="65" fill="#22d3ee"/>
-    <path d="M 43 15 L 50 5 L 57 15 Z" fill="#22d3ee"/>
-    <path d="M 43 50 L 12 68 L 43 58 Z" fill="#22d3ee"/>
-    <path d="M 57 50 L 88 68 L 57 58 Z" fill="#22d3ee"/>
-    <path d="M 43 80 L 50 100 L 57 80 Z" fill="#f59e0b"/>
+    <rect x="43" y="15" width="14" height="65" fill="#fff"/>
+    <path d="M 43 15 L 50 5 L 57 15 Z" fill="#fff"/>
+    <path d="M 43 50 L 12 68 L 43 58 Z" fill="#fff"/>
+    <path d="M 57 50 L 88 68 L 57 58 Z" fill="#fff"/>
+    <path d="M 43 80 L 50 100 L 57 80 Z" fill="#fff"/>
   </g>
 </svg>
